@@ -5,7 +5,8 @@ import sklearn
 import mmcv
 import os
 import warnings
-from mmcv import Config, DictAction
+from mmcv import DictAction
+from mmcv.utils.config import Config
 from mmcv.cnn import fuse_conv_bn
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
 from mmcv.runner import (get_dist_info, init_dist, load_checkpoint,
@@ -220,9 +221,13 @@ def main():
         model.PALETTE = dataset.PALETTE
 
     if not distributed:
-        assert False
+        # assert False
         # model = MMDataParallel(model, device_ids=[0])
-        # outputs = single_gpu_test(model, data_loader, args.show, args.show_dir)
+        if torch.cuda.is_available():
+            model = MMDataParallel(model, device_ids=[0])
+        else:
+            model = MMDataParallel(model)  # CPU mode
+        outputs = single_gpu_test(model, data_loader, args.show, args.show_dir)
     else:
         model = MMDistributedDataParallel(
             model.cuda(),

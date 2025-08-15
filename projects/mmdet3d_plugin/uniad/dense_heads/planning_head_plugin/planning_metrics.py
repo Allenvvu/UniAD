@@ -81,6 +81,43 @@ class PlanningMetric(Metric):
 
         return torch.from_numpy(collision).to(device=traj.device)
 
+    # def evaluate_coll(self, trajs, gt_trajs, segmentation):
+    #     '''
+    #     trajs: torch.Tensor (B, n_future, 2)
+    #     gt_trajs: torch.Tensor (B, n_future, 2)
+    #     segmentation: torch.Tensor (B, n_future, 200, 200)
+    #     '''
+    #     B, n_future, _ = trajs.shape
+    #     trajs = trajs * torch.tensor([-1, 1], device=trajs.device)
+    #     gt_trajs = gt_trajs * torch.tensor([-1, 1], device=gt_trajs.device)
+
+    #     obj_coll_sum = torch.zeros(n_future, device=segmentation.device)
+    #     obj_box_coll_sum = torch.zeros(n_future, device=segmentation.device)
+
+    #     for i in range(B):
+    #         gt_box_coll = self.evaluate_single_coll(gt_trajs[i], segmentation[i])
+
+    #         xx, yy = trajs[i,:,0], trajs[i, :, 1]
+    #         yi = ((yy - self.bx[0]) / self.dx[0]).long()
+    #         xi = ((xx - self.bx[1]) / self.dx[1]).long()
+
+    #         m1 = torch.logical_and(
+    #             torch.logical_and(yi >= 0, yi < self.bev_dimension[0]),
+    #             torch.logical_and(xi >= 0, xi < self.bev_dimension[1]),
+    #         )
+    #         m1 = torch.logical_and(m1, torch.logical_not(gt_box_coll))
+
+    #         ti = torch.arange(n_future)
+    #         # obj_coll_sum[ti[m1]] += segmentation[i, ti[m1], yi[m1], xi[m1]].long()  # for debug
+    #         obj_coll_sum[ti[m1].cuda()] += segmentation[i, ti[m1].cuda(), yi[m1].cuda(), xi[m1].cuda()].long()
+    #         print(f"segmentation device: {segmentation.device}, ti device: {ti.device}")
+
+    #         m2 = torch.logical_not(gt_box_coll)
+    #         box_coll = self.evaluate_single_coll(trajs[i], segmentation[i])
+    #         obj_box_coll_sum[ti[m2]] += (box_coll[ti[m2]]).long()
+
+    #     return obj_coll_sum, obj_box_coll_sum
+
     def evaluate_coll(self, trajs, gt_trajs, segmentation):
         '''
         trajs: torch.Tensor (B, n_future, 2)
@@ -88,29 +125,40 @@ class PlanningMetric(Metric):
         segmentation: torch.Tensor (B, n_future, 200, 200)
         '''
         B, n_future, _ = trajs.shape
-        trajs = trajs * torch.tensor([-1, 1], device=trajs.device)
-        gt_trajs = gt_trajs * torch.tensor([-1, 1], device=gt_trajs.device)
+        device = segmentation.device  # Use segmentation's device as reference
 
-        obj_coll_sum = torch.zeros(n_future, device=segmentation.device)
-        obj_box_coll_sum = torch.zeros(n_future, device=segmentation.device)
+        # Move inputs to the same device
+        trajs = trajs.to(device)
+        gt_trajs = gt_trajs.to(device)
+        segmentation = segmentation.to(device)
+
+        # Apply scaling with device-specific tensor
+        trajs = trajs * torch.tensor([-1, 1], device=device)
+        gt_trajs = gt_trajs * torch.tensor([-1, 1], device=device)
+
+        # Initialize sums on the same device
+        obj_coll_sum = torch.zeros(n_future, device=device)
+        obj_box_coll_sum = torch.zeros(n_future, device=device)
 
         for i in range(B):
             gt_box_coll = self.evaluate_single_coll(gt_trajs[i], segmentation[i])
 
             xx, yy = trajs[i,:,0], trajs[i, :, 1]
-            yi = ((yy - self.bx[0]) / self.dx[0]).long()
-            xi = ((xx - self.bx[1]) / self.dx[1]).long()
+            yi = ((yy - self.bx[0]) / self.dx[0]).long().to(device)  # Move to device
+            xi = ((xx - self.bx[1]) / self.dx[1]).long().to(device)  # Move to device
 
             m1 = torch.logical_and(
                 torch.logical_and(yi >= 0, yi < self.bev_dimension[0]),
                 torch.logical_and(xi >= 0, xi < self.bev_dimension[1]),
             )
-            m1 = torch.logical_and(m1, torch.logical_not(gt_box_coll))
+            m1 = torch.logical_and(m1, torch.logical_not(gt_box_coll)).to(device)  # Move mask to device
 
-            ti = torch.arange(n_future)
-            obj_coll_sum[ti[m1]] += segmentation[i, ti[m1], yi[m1], xi[m1]].long()
+            ti = torch.arange(n_future, device=device)  # Create ti on the correct device
+            obj_coll_sum[ti[m1]] += segmentation[i, ti[m1], yi[m1], xi[m1]].long()  # Use without extra .cuda()
 
-            m2 = torch.logical_not(gt_box_coll)
+            print(f"segmentation device: {segmentation.device}, ti device: {ti.device}")
+
+            m2 = torch.logical_not(gt_box_coll).to(device)
             box_coll = self.evaluate_single_coll(trajs[i], segmentation[i])
             obj_box_coll_sum[ti[m2]] += (box_coll[ti[m2]]).long()
 

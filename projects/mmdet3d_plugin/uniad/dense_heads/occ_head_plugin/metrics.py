@@ -21,7 +21,9 @@ class IntersectionOverUnion(Metric):
         reduction: str = 'none',
         compute_on_step: bool = False,
     ):
-        super().__init__(compute_on_step=compute_on_step)
+        #super().__init__(compute_on_step=compute_on_step)
+        super().__init__() # For compatibility with PyTorch Lightning 1.9.0 and above
+
 
         self.n_classes = n_classes
         self.ignore_index = ignore_index
