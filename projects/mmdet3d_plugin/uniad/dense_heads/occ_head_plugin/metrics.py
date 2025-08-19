@@ -80,7 +80,7 @@ class PanopticMetric(Metric):
         vehicles_id: int = 1,
         compute_on_step: bool = False,
     ):
-        super().__init__(compute_on_step=compute_on_step)
+        super().__init__() # compute_on_step=compute_on_step
 
         self.n_classes = n_classes
         self.temporally_consistent = temporally_consistent

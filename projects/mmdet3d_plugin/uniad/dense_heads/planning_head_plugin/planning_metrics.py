@@ -156,7 +156,7 @@ class PlanningMetric(Metric):
             ti = torch.arange(n_future, device=device)  # Create ti on the correct device
             obj_coll_sum[ti[m1]] += segmentation[i, ti[m1], yi[m1], xi[m1]].long()  # Use without extra .cuda()
 
-            print(f"segmentation device: {segmentation.device}, ti device: {ti.device}")
+            # print(f"segmentation device: {segmentation.device}, ti device: {ti.device}")
 
             m2 = torch.logical_not(gt_box_coll).to(device)
             box_coll = self.evaluate_single_coll(trajs[i], segmentation[i])
