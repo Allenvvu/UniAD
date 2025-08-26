@@ -1,0 +1,80 @@
+{
+  "dataset": "hct_logistic",
+  "test_poses": 3,
+  "successful_conversions": 3,
+  "results": [
+    {
+      "pose_id": 1,
+      "ego_pose": [
+        313.40164947509766,
+        -77.27848167054319,
+        0.0
+      ],
+      "non_zero_queries": 300,
+      "utilization": 100.0,
+      "filename": "pose_1_hct_lane_query_20250822_130638"
+    },
+    {
+      "pose_id": 2,
+      "ego_pose": [
+        313.40164947509766,
+        -77.27848167054319,
+        1.5707963267948966
+      ],
+      "non_zero_queries": 300,
+      "utilization": 100.0,
+      "filename": "pose_2_hct_lane_query_20250822_130640"
+    },
+    {
+      "pose_id": 3,
+      "ego_pose": [
+        300.0,
+        -50.0,
+        0.0
+      ],
+      "non_zero_queries": 300,
+      "utilization": 100.0,
+      "filename": "pose_3_hct_lane_query_20250822_130643"
+    }
+  ],
+  "coordinate_bounds": {
+    "x_min": -76.71147155761719,
+    "x_max": 703.5147705078125,
+    "y_min": -425.3232421875,
+    "y_max": 270.7662788464136,
+    "z_min": 40.78506517410278,
+    "z_max": 50.50990156279951
+  },
+  "config": {
+    "embed_dim": 256,
+    "max_queries": 300,
+    "sample_distance": 1.0,
+    "pc_range": [
+      -100.0,
+      -450.0,
+      35.0,
+      720.0,
+      280.0,
+      55.0
+    ]
+  },
+  "analysis": {
+    "files_found": [
+      "roadlines.json",
+      "pedestrian_crossing.json",
+      "roadmarkers.json",
+      "lanes_info.json"
+    ],
+    "total_roadlines": 728,
+    "total_crossings": 0,
+    "total_markers": 92,
+    "coordinate_bounds": {
+      "x_min": -76.71147155761719,
+      "x_max": 703.5147705078125,
+      "y_min": -425.3232421875,
+      "y_max": 270.7662788464136,
+      "z_min": 40.78506517410278,
+      "z_max": 50.50990156279951
+    }
+  }
+}

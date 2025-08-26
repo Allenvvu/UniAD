@@ -1,0 +1,28 @@
+{
+  "files_found": [
+    "roadlines.json",
+    "pedestrian_crossing.json",
+    "roadmarkers.json"
+  ],
+  "total_roadlines": 482,
+  "total_crossings": 1,
+  "total_markers": 178,
+  "coordinate_bounds": {
+    "x_min": -437.15985107421875,
+    "x_max": 314.78123820132134,
+    "y_min": -459.9799313248475,
+    "y_max": 256.7472839355469
+  },
+  "conversion_results": {
+    "ego_pose": [
+      0.0,
+      -15.0,
+      0.0
+    ],
+    "non_zero_queries": 57,
+    "query_utilization": 0.19,
+    "max_norm": 15.999958038330078,
+    "min_norm": 0.0,
+    "mean_norm": 3.03996205329895
+  }
+}

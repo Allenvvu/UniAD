@@ -1,0 +1,23 @@
+{
+  "timestamp": "20250822_130643",
+  "dataset": "hct_logistic",
+  "ego_pose": {
+    "x": 300.0,
+    "y": -50.0,
+    "yaw": 0.0
+  },
+  "lane_query_shape": [
+    1,
+    300,
+    256
+  ],
+  "lane_query_pos_shape": [
+    1,
+    300,
+    256
+  ],
+  "non_zero_queries": 300,
+  "max_query_norm": 16.0,
+  "min_query_norm": 15.998960494995117,
+  "mean_query_norm": 15.999919891357422
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "20250822_111149",
+  "ego_pose": {
+    "x": -61.1893064364487,
+    "y": -101.6163236946503,
+    "yaw": -1.5707963267948966
+  },
+  "lane_query_shape": [
+    1,
+    300,
+    256
+  ],
+  "lane_query_pos_shape": [
+    1,
+    300,
+    256
+  ],
+  "non_zero_queries": 10,
+  "max_query_norm": 15.999846458435059,
+  "min_query_norm": 0.0,
+  "mean_query_norm": 0.5333094596862793
+}

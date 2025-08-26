@@ -1,0 +1,78 @@
+{
+  "test_poses": 6,
+  "successful_conversions": 6,
+  "results": [
+    {
+      "pose_id": 1,
+      "ego_pose": [
+        -61.1893064364487,
+        -101.6163236946503,
+        0.0
+      ],
+      "non_zero_queries": 10,
+      "utilization": 0.03333333333333333,
+      "filename": "pose_1_lane_query_20250822_111149"
+    },
+    {
+      "pose_id": 2,
+      "ego_pose": [
+        -61.1893064364487,
+        -101.6163236946503,
+        1.5707963267948966
+      ],
+      "non_zero_queries": 10,
+      "utilization": 0.03333333333333333,
+      "filename": "pose_2_lane_query_20250822_111149"
+    },
+    {
+      "pose_id": 3,
+      "ego_pose": [
+        -61.1893064364487,
+        -101.6163236946503,
+        3.141592653589793
+      ],
+      "non_zero_queries": 10,
+      "utilization": 0.03333333333333333,
+      "filename": "pose_3_lane_query_20250822_111149"
+    },
+    {
+      "pose_id": 4,
+      "ego_pose": [
+        -61.1893064364487,
+        -101.6163236946503,
+        -1.5707963267948966
+      ],
+      "non_zero_queries": 10,
+      "utilization": 0.03333333333333333,
+      "filename": "pose_4_lane_query_20250822_111149"
+    },
+    {
+      "pose_id": 5,
+      "ego_pose": [
+        -427.15985107421875,
+        -101.6163236946503,
+        0.0
+      ],
+      "non_zero_queries": 0,
+      "utilization": 0.0,
+      "filename": "pose_5_lane_query_20250822_111149"
+    },
+    {
+      "pose_id": 6,
+      "ego_pose": [
+        304.78123820132134,
+        -101.6163236946503,
+        0.0
+      ],
+      "non_zero_queries": 0,
+      "utilization": 0.0,
+      "filename": "pose_6_lane_query_20250822_111149"
+    }
+  ],
+  "coordinate_bounds": {
+    "x_min": -437.15985107421875,
+    "x_max": 314.78123820132134,
+    "y_min": -459.9799313248475,
+    "y_max": 256.7472839355469
+  }
+}
