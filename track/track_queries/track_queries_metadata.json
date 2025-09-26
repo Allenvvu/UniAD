@@ -1,0 +1,11 @@
+{
+  "num_objects": 16582,
+  "embedding_dim": 256,
+  "device": "cpu",
+  "bbox_format": "7DOF [x,y,z,w,l,h,yaw]",
+  "coordinate_system": "BEV",
+  "reference_implementations": [
+    "semantic-map/motionformer_integration.py:186-201",
+    "projects/mmdet3d_plugin/uniad/detectors/uniad_track.py:480"
+  ]
+}

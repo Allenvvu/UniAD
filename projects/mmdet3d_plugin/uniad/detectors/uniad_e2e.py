@@ -12,6 +12,8 @@ import os
 from ..dense_heads.seg_head_plugin import IOU
 from .uniad_track import UniADTrack
 from mmdet.models.builder import build_head
+from ..dense_heads.virtual_bev_module import VirtualBEVModule
+from mmcv.parallel import DataContainer
 
 @DETECTORS.register_module()
 class UniAD(UniADTrack):
@@ -31,6 +33,14 @@ class UniAD(UniADTrack):
             occ=1.0,
             planning=1.0
         ),
+        use_virtual_bev=False,
+        virtual_bev_config=dict(
+            embed_dim=256,
+            bev_h=200,
+            bev_w=200,
+            use_learnable_bev=True,
+            use_spatial_encoding=True
+        ),
         **kwargs,
     ):
         super(UniAD, self).__init__(**kwargs)
@@ -42,10 +52,15 @@ class UniAD(UniADTrack):
             self.motion_head = build_head(motion_head)
         if planning_head:
             self.planning_head = build_head(planning_head)
-        
+
         self.task_loss_weight = task_loss_weight
         assert set(task_loss_weight.keys()) == \
                {'track', 'occ', 'motion', 'map', 'planning'}
+
+        # Initialize virtual BEV module for ITRI training
+        self.use_virtual_bev = use_virtual_bev
+        if use_virtual_bev:
+            self.virtual_bev_module = VirtualBEVModule(**virtual_bev_config)
 
     @property
     def with_planning_head(self):
@@ -105,19 +120,24 @@ class UniAD(UniADTrack):
                       gt_sdc_label=None,
                       gt_sdc_fut_traj=None,
                       gt_sdc_fut_traj_mask=None,
-                      
+
                       # Occ_gt
                       gt_segmentation=None,
-                      gt_instance=None, 
+                      gt_instance=None,
                       gt_occ_img_is_valid=None,
-                      
+
                       #planning
                       sdc_planning=None,
                       sdc_planning_mask=None,
                       command=None,
-                      
+
                       # fut gt for planning
                       gt_future_boxes=None,
+
+                      # ITRI virtual BEV inputs
+                      sdc_embeddings=None,
+                      track_queries=None,
+                      map_queries=None,
                       **kwargs,  # [1, 9]
                       ):
         """Forward training function for the model that includes multiple tasks, such as tracking, segmentation, motion prediction, occupancy prediction, and planning.
@@ -157,33 +177,226 @@ class UniAD(UniADTrack):
                     is prefixed with the corresponding task name, e.g., 'track', 'map', 'motion', 'occ', and 'planning'. The values are the calculated losses for each task.
         """
         losses = dict()
-        len_queue = img.size(1)
-        
 
-        losses_track, outs_track = self.forward_track_train(img, gt_bboxes_3d, gt_labels_3d, gt_past_traj, gt_past_traj_mask, gt_inds, gt_sdc_bbox, gt_sdc_label,
-                                                        l2g_t, l2g_r_mat, img_metas, timestamp)
-        losses_track = self.loss_weighted_and_prefixed(losses_track, prefix='track')
-        losses.update(losses_track)
-        
-        # Upsample bev for tiny version
-        outs_track = self.upsample_bev_if_tiny(outs_track)
+        # Helper: unwrap DataContainer to raw python/tensors
+        def _unwrap(obj):
+            if isinstance(obj, DataContainer):
+                return obj.data
+            return obj
 
-        bev_embed = outs_track["bev_embed"]
-        bev_pos  = outs_track["bev_pos"]
+        # Helper: standardize map/track inputs to tensors if possible
+        def _to_tensor_or_none(obj, prefer_keys=None):
+            """Robustly extract a tensor from possibly wrapped structures.
 
-        img_metas = [each[len_queue-1] for each in img_metas]
+            Supports:
+            - torch.Tensor directly
+            - dicts with preferred keys (e.g., 'queries', 'track_queries', 'lane_query')
+            - dicts with any tensor values
+            - lists/tuples of tensors/dicts (search from the end)
+            - DataContainer wrapping any of the above
+            """
+            obj = _unwrap(obj)
+            # Direct tensor
+            if torch.is_tensor(obj):
+                return obj
+            # List/Tuple: search backwards for the most recent tensor/dict tensor
+            if isinstance(obj, (list, tuple)):
+                for item in reversed(obj):
+                    t = _to_tensor_or_none(item, prefer_keys=prefer_keys)
+                    if torch.is_tensor(t):
+                        return t
+                return None
+            # Dict: try preferred keys, then any tensor value
+            if isinstance(obj, dict):
+                keys = prefer_keys or []
+                for k in keys:
+                    v = obj.get(k, None)
+                    v = _unwrap(v)
+                    if torch.is_tensor(v):
+                        return v
+                    # Sometimes tensors are nested one level deeper
+                    if isinstance(v, (list, tuple)):
+                        for item in reversed(v):
+                            item = _unwrap(item)
+                            if torch.is_tensor(item):
+                                return item
+                # fallback: first tensor value in dict (respect insertion order)
+                for v in obj.values():
+                    v = _unwrap(v)
+                    if torch.is_tensor(v):
+                        return v
+                    if isinstance(v, (list, tuple)):
+                        for item in reversed(v):
+                            item = _unwrap(item)
+                            if torch.is_tensor(item):
+                                return item
+            # Diagnostic print when extraction fails
+            if os.environ.get('UNIAD_DEBUG_VBEV', '0') == '1':
+                print(f"[DEBUG] _to_tensor_or_none failed: type={type(obj)}; prefer_keys={prefer_keys}")
+                if isinstance(obj, dict):
+                    print(f"[DEBUG] dict keys: {list(obj.keys())}")
+            return None
 
-        outs_seg = dict()
-        if self.with_seg_head:          
-            losses_seg, outs_seg = self.seg_head.forward_train(bev_embed, img_metas,
-                                                          gt_lane_labels, gt_lane_bboxes, gt_lane_masks)
-            
-            losses_seg = self.loss_weighted_and_prefixed(losses_seg, prefix='map')
-            losses.update(losses_seg)
+        # Unwrap inputs that may come as DataContainer/dicts from the pipeline
+        sdc_embeddings_unwrapped = _unwrap(sdc_embeddings)
+        track_queries_unwrapped = _unwrap(track_queries)
+        map_queries_unwrapped = _unwrap(map_queries)
+
+        # Standardize to tensors when possible
+        # Try broader key sets to better match saved formats
+        track_queries_tensor = _to_tensor_or_none(track_queries_unwrapped, prefer_keys=['queries', 'track_queries', 'track_query_embeddings'])
+        map_queries_tensor = _to_tensor_or_none(map_queries_unwrapped, prefer_keys=['lane_queries', 'lane_query', 'queries', 'track_queries'])
+        sdc_embeddings_tensor = _to_tensor_or_none(sdc_embeddings_unwrapped)
+
+        # Handle virtual BEV mode for ITRI training
+        if self.use_virtual_bev:
+            # Extract batch size
+            batch_size = 1
+            if img is not None:
+                img_unwrapped = _unwrap(img)
+                if torch.is_tensor(img_unwrapped):
+                    batch_size = img_unwrapped.size(0)
+            elif sdc_embeddings_tensor is not None:
+                batch_size = sdc_embeddings_tensor.size(0) if sdc_embeddings_tensor.dim() > 1 else 1
+
+            # Debug track_queries input
+            print(f"DEBUG: track_queries input type: {type(track_queries)}")
+            if track_queries is not None:
+                if hasattr(track_queries, 'shape'):
+                    print(f"DEBUG: track_queries shape: {track_queries.shape}")
+                elif isinstance(track_queries, (list, tuple)):
+                    print(f"DEBUG: track_queries length: {len(track_queries)}")
+                    if len(track_queries) > 0:
+                        print(f"DEBUG: track_queries[0] type: {type(track_queries[0])}")
+                        if hasattr(track_queries[0], 'shape'):
+                            print(f"DEBUG: track_queries[0] shape: {track_queries[0].shape}")
+                else:
+                    print(f"DEBUG: track_queries value: {track_queries}")
+            else:
+                print("DEBUG: track_queries is None")
+
+            # Create virtual BEV and dummy outs (pass standardized tensors when available)
+            bev_embed = self.virtual_bev_module(
+                sdc_embeddings_tensor if sdc_embeddings_tensor is not None else sdc_embeddings_unwrapped,
+                track_queries_tensor if track_queries_tensor is not None else track_queries_unwrapped,
+                map_queries_tensor if map_queries_tensor is not None else map_queries_unwrapped,
+                batch_size
+            )
+
+            # Prefer real track structures when available
+            track_bbox_results = _unwrap(kwargs.get('track_bbox_results', None))
+            sdc_track_bbox_results = _unwrap(kwargs.get('sdc_track_bbox_results', None))
+            track_query_matched_idxes = _unwrap(kwargs.get('track_query_matched_idxes', None))
+
+            has_real_track = track_bbox_results is not None or sdc_track_bbox_results is not None or track_query_matched_idxes is not None
+            if has_real_track:
+                outs_track = self.virtual_bev_module.create_outs_track(
+                    sdc_embeddings_tensor if sdc_embeddings_tensor is not None else sdc_embeddings_unwrapped,
+                    track_queries_tensor if track_queries_tensor is not None else track_queries_unwrapped,
+                    track_query_matched_idxes=track_query_matched_idxes,
+                    track_bbox_results=track_bbox_results,
+                    sdc_track_bbox_results=sdc_track_bbox_results,
+                    batch_size=batch_size
+                )
+            else:
+                outs_track = self.virtual_bev_module.create_dummy_outs_track(
+                    sdc_embeddings_tensor if sdc_embeddings_tensor is not None else sdc_embeddings_unwrapped,
+                    track_queries_tensor if track_queries_tensor is not None else track_queries_unwrapped,
+                    batch_size
+                )
+            outs_seg = self.virtual_bev_module.create_dummy_outs_seg(
+                map_queries_tensor if map_queries_tensor is not None else map_queries_unwrapped,
+                batch_size
+            )
+
+            # Create dummy img_metas if needed
+            if img_metas is None:
+                img_metas = [[{}] for _ in range(batch_size)]
+
+            # Skip tracking and segmentation losses for virtual BEV mode
+            losses_track = {}
+            losses_seg = {}
+
+        else:
+            # Original UniAD flow with images
+            len_queue = img.size(1)
+
+            losses_track, outs_track = self.forward_track_train(img, gt_bboxes_3d, gt_labels_3d, gt_past_traj, gt_past_traj_mask, gt_inds, gt_sdc_bbox, gt_sdc_label,
+                                                            l2g_t, l2g_r_mat, img_metas, timestamp)
+            losses_track = self.loss_weighted_and_prefixed(losses_track, prefix='track')
+            losses.update(losses_track)
+
+            # Upsample bev for tiny version
+            outs_track = self.upsample_bev_if_tiny(outs_track)
+
+            bev_embed = outs_track["bev_embed"]
+
+            img_metas = [each[len_queue-1] for each in img_metas]
+
+            outs_seg = dict()
+            if self.with_seg_head:
+                losses_seg, outs_seg = self.seg_head.forward_train(bev_embed, img_metas,
+                                                              gt_lane_labels, gt_lane_bboxes, gt_lane_masks)
+
+                losses_seg = self.loss_weighted_and_prefixed(losses_seg, prefix='map')
+                losses.update(losses_seg)
+
+        # Get BEV position encoding
+        bev_pos = outs_track.get("bev_pos", torch.zeros_like(bev_embed))
 
         outs_motion = dict()
         # Forward Motion Head
         if self.with_motion_head:
+            # Handle None trajectory data for virtual BEV mode
+            if gt_fut_traj is None:
+                print("Warning: gt_fut_traj is None, creating dummy trajectory data for motion head")
+                # Create dummy trajectory data for motion head
+                batch_size = bev_embed.size(1)
+                num_queries = outs_track.get('track_query_embeddings', torch.zeros(1, 1, 256)).size(0)
+                gt_fut_traj = [torch.zeros(num_queries, 6, 2).to(bev_embed.device)]  # 6 future steps, 2D
+                gt_fut_traj_mask = [torch.ones(num_queries, 6).to(bev_embed.device)]
+                gt_sdc_fut_traj = [torch.zeros(1, 6, 2).to(bev_embed.device)]
+                gt_sdc_fut_traj_mask = [torch.ones(1, 6).to(bev_embed.device)]
+            
+            # Ensure trajectory DCs are normalized to list[Tensor]
+            def _to_tensor_list(x):
+                x = _unwrap(x)
+                if x is None:
+                    return None
+                if isinstance(x, (list, tuple)):
+                    out = []
+                    for item in x:
+                        item = _unwrap(item)
+                        # Drill down nested list/tuple once if needed
+                        if isinstance(item, (list, tuple)) and len(item) > 0:
+                            item = _unwrap(item[0])
+                        if not torch.is_tensor(item):
+                            # If still not tensor, skip
+                            continue
+                        out.append(item)
+                    return out if out else None
+                # Single tensor
+                if torch.is_tensor(x):
+                    return [x]
+                return None
+
+            gt_fut_traj = _to_tensor_list(gt_fut_traj)
+            gt_fut_traj_mask = _to_tensor_list(gt_fut_traj_mask)
+            gt_sdc_fut_traj = _to_tensor_list(gt_sdc_fut_traj)
+            gt_sdc_fut_traj_mask = _to_tensor_list(gt_sdc_fut_traj_mask)
+
+            # Fallback to dummy trajectories if any required traj input is missing
+            if gt_fut_traj is None or gt_fut_traj_mask is None or gt_sdc_fut_traj is None or gt_sdc_fut_traj_mask is None:
+                print("Warning: missing traj inputs; creating dummy trajectories for motion head")
+                # Determine num_queries from outs_track
+                tq = outs_track.get('track_query_embeddings')
+                num_queries = tq.size(0) if torch.is_tensor(tq) else 1
+                device = bev_embed.device
+                gt_fut_traj = [torch.zeros(num_queries, 6, 2, device=device)]
+                gt_fut_traj_mask = [torch.ones(num_queries, 6, device=device)]
+                gt_sdc_fut_traj = [torch.zeros(1, 6, 2, device=device)]
+                gt_sdc_fut_traj_mask = [torch.ones(1, 6, device=device)]
+
             ret_dict_motion = self.motion_head.forward_train(bev_embed,
                                                         gt_bboxes_3d, gt_labels_3d, 
                                                         gt_fut_traj, gt_fut_traj_mask, 

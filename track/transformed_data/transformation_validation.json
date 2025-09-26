@@ -1,0 +1,33 @@
+{
+  "total_objects": 16582,
+  "coordinate_ranges": {
+    "bev_x": {
+      "min": 2.4844914674758964,
+      "max": 197.7096413173272,
+      "mean": 110.79433935336931
+    },
+    "bev_y": {
+      "min": -64.36959019050327,
+      "max": 383.9156406425901,
+      "mean": 115.48043506111658
+    }
+  },
+  "yaw_range": {
+    "min": -3.1411858249888653,
+    "max": 3.141592653589793,
+    "mean": 0.056550976827029836
+  },
+  "confidence_stats": {
+    "min": 0.1,
+    "max": 1.0,
+    "mean": 0.3186108673322916,
+    "high_confidence_count": 3572,
+    "zero_score_converted": 16582
+  },
+  "class_distribution": {
+    "unknown": 15850,
+    "car": 515,
+    "motorbike": 217
+  },
+  "unique_object_ids": 70
+}
