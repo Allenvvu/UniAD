@@ -10,8 +10,10 @@ __pycache__/
 .dist_test/
 *.avi
 ckpts/
+Created/
 data
-data_carla
+projects_original/
+semantic-map/
 viz/
 .Python
 build/
@@ -137,8 +139,6 @@ dmypy.json
 # output & ckpts
 output/
 test/
-ckpts/
-ckpts
 
 # work_dirs
 **/work_dirs
@@ -150,3 +150,9 @@ debug/
 *projs/
 
 core.*
+ 
+# Allow tracking only Python files in data/itri/hct_train (keep rest of data ignored)
+!data/itri/
+!data/itri/hct_train/
+!data/itri/hct_train/*.py
+!data/itri/hct_train/**/*.py

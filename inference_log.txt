@@ -1,1067 +1,0 @@
-2025-08-19 16:26:34,490 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.0.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,496 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.1.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,500 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.2.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,504 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.3.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,508 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.4.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,513 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.5.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,517 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.6.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,521 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.7.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,525 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.8.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,529 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.9.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,534 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.10.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,538 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.11.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,542 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.12.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,546 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.13.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,550 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.14.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,555 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.15.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,559 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.16.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,563 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.17.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,567 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.18.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,571 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.19.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,576 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.20.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,580 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.21.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,584 - root - INFO - ModulatedDeformConvPack img_backbone.layer3.22.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,589 - root - INFO - ModulatedDeformConvPack img_backbone.layer4.0.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,598 - root - INFO - ModulatedDeformConvPack img_backbone.layer4.1.conv2 is upgraded to version 2.
-2025-08-19 16:26:34,604 - root - INFO - ModulatedDeformConvPack img_backbone.layer4.2.conv2 is upgraded to version 2.
-======
-Loading NuScenes tables for version v1.0-trainval...
-23 category,
-8 attribute,
-4 visibility,
-64386 instance,
-12 sensor,
-10200 calibrated_sensor,
-2631083 ego_pose,
-68 log,
-850 scene,
-34149 sample,
-2631083 sample_data,
-1166187 sample_annotation,
-4 map,
-Done loading in 43.734 seconds.
-======
-Reverse indexing ...
-Done reverse indexing in 9.3 seconds.
-======
-Original dataset size: 6019
-Limited dataset to 500 samples
-WARNING!!!!, Only can be used for obtain inference speed!!!!
-load checkpoint from local path: ckpts/uniad_base_e2e.pth
-Starting inference on 500 samples...
-[                                                  ] 0/500, elapsed: 0s, ETA:2025-08-19 16:26:37,977 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:38,019 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:26:39,091 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:39,130 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:26:40,066 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:40,100 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                                 ] 1/500, 0.2 task/s, elapsed: 5s, ETA:  2356s2025-08-19 16:26:41,015 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:41,046 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                                 ] 2/500, 0.4 task/s, elapsed: 5s, ETA:  1367s2025-08-19 16:26:41,979 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:42,019 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                                 ] 3/500, 0.5 task/s, elapsed: 6s, ETA:  1052s[                                 ] 4/500, 0.6 task/s, elapsed: 7s, ETA:   897s2025-08-19 16:26:43,001 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:43,035 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                                 ] 5/500, 0.6 task/s, elapsed: 8s, ETA:   799s2025-08-19 16:26:43,957 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:43,989 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:26:45,042 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:45,091 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                                 ] 6/500, 0.6 task/s, elapsed: 9s, ETA:   779s2025-08-19 16:26:46,107 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:46,137 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                                ] 7/500, 0.7 task/s, elapsed: 10s, ETA:   737s2025-08-19 16:26:47,077 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:47,108 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                                ] 8/500, 0.7 task/s, elapsed: 11s, ETA:   702s[                                ] 9/500, 0.7 task/s, elapsed: 12s, ETA:   675s2025-08-19 16:26:48,097 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:48,132 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                               ] 10/500, 0.8 task/s, elapsed: 13s, ETA:   652s2025-08-19 16:26:49,115 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:49,146 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                               ] 11/500, 0.8 task/s, elapsed: 14s, ETA:   634s2025-08-19 16:26:50,132 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:50,164 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                               ] 12/500, 0.8 task/s, elapsed: 15s, ETA:   620s2025-08-19 16:26:51,191 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:51,224 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                               ] 13/500, 0.8 task/s, elapsed: 16s, ETA:   611s2025-08-19 16:26:52,234 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:52,266 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                               ] 14/500, 0.8 task/s, elapsed: 17s, ETA:   602s2025-08-19 16:26:53,315 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:53,356 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                               ] 15/500, 0.8 task/s, elapsed: 18s, ETA:   598s2025-08-19 16:26:54,461 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:54,494 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[                               ] 16/500, 0.8 task/s, elapsed: 20s, ETA:   592s2025-08-19 16:26:55,534 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:55,566 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 17/500, 0.8 task/s, elapsed: 21s, ETA:   587s2025-08-19 16:26:56,624 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:56,659 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 18/500, 0.8 task/s, elapsed: 22s, ETA:   584s2025-08-19 16:26:57,772 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:57,805 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 19/500, 0.8 task/s, elapsed: 23s, ETA:   581s2025-08-19 16:26:58,881 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:26:58,915 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 20/500, 0.8 task/s, elapsed: 24s, ETA:   579s2025-08-19 16:27:00,007 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:00,045 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 21/500, 0.8 task/s, elapsed: 25s, ETA:   577s2025-08-19 16:27:01,136 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:01,168 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 22/500, 0.8 task/s, elapsed: 26s, ETA:   574s2025-08-19 16:27:02,264 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:02,296 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 23/500, 0.8 task/s, elapsed: 28s, ETA:   572s2025-08-19 16:27:03,422 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:03,454 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 24/500, 0.8 task/s, elapsed: 29s, ETA:   570s2025-08-19 16:27:04,549 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:04,580 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 25/500, 0.8 task/s, elapsed: 30s, ETA:   568s2025-08-19 16:27:05,706 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:05,746 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 26/500, 0.8 task/s, elapsed: 31s, ETA:   566s2025-08-19 16:27:06,926 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:06,959 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 27/500, 0.8 task/s, elapsed: 32s, ETA:   565s2025-08-19 16:27:08,116 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:08,148 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 28/500, 0.8 task/s, elapsed: 33s, ETA:   564s2025-08-19 16:27:09,282 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:09,314 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 29/500, 0.8 task/s, elapsed: 35s, ETA:   562s2025-08-19 16:27:10,441 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:10,475 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 30/500, 0.8 task/s, elapsed: 36s, ETA:   561s2025-08-19 16:27:11,629 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:11,663 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 31/500, 0.8 task/s, elapsed: 37s, ETA:   560s2025-08-19 16:27:12,808 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:12,841 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>                              ] 32/500, 0.8 task/s, elapsed: 38s, ETA:   558s2025-08-19 16:27:13,962 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:13,995 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 33/500, 0.8 task/s, elapsed: 39s, ETA:   557s2025-08-19 16:27:15,100 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:15,140 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:27:16,184 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-[>>                             ] 34/500, 0.8 task/s, elapsed: 41s, ETA:   555s2025-08-19 16:27:16,222 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:27:17,230 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:17,261 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 35/500, 0.8 task/s, elapsed: 42s, ETA:   553s[>>                             ] 36/500, 0.8 task/s, elapsed: 43s, ETA:   548s2025-08-19 16:27:18,283 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:18,317 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 37/500, 0.9 task/s, elapsed: 43s, ETA:   543s2025-08-19 16:27:19,310 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:19,343 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 38/500, 0.9 task/s, elapsed: 44s, ETA:   540s2025-08-19 16:27:20,241 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:20,273 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 39/500, 0.9 task/s, elapsed: 46s, ETA:   538s2025-08-19 16:27:21,299 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:21,337 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 40/500, 0.9 task/s, elapsed: 46s, ETA:   532s2025-08-19 16:27:22,352 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:22,390 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 41/500, 0.9 task/s, elapsed: 47s, ETA:   530s2025-08-19 16:27:23,481 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:23,512 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 42/500, 0.9 task/s, elapsed: 49s, ETA:   530s2025-08-19 16:27:24,519 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:24,555 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 43/500, 0.9 task/s, elapsed: 50s, ETA:   527s2025-08-19 16:27:25,566 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:25,598 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 44/500, 0.9 task/s, elapsed: 51s, ETA:   525s2025-08-19 16:27:26,649 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:26,683 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 45/500, 0.9 task/s, elapsed: 52s, ETA:   523s2025-08-19 16:27:27,739 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:27,770 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 46/500, 0.9 task/s, elapsed: 53s, ETA:   522s2025-08-19 16:27:28,917 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:28,957 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 47/500, 0.9 task/s, elapsed: 54s, ETA:   521s2025-08-19 16:27:30,023 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:30,066 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>                             ] 48/500, 0.9 task/s, elapsed: 55s, ETA:   519s2025-08-19 16:27:31,122 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:31,155 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 49/500, 0.9 task/s, elapsed: 56s, ETA:   517s2025-08-19 16:27:32,160 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:32,193 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 50/500, 0.9 task/s, elapsed: 57s, ETA:   515s2025-08-19 16:27:33,245 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:33,284 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 51/500, 0.9 task/s, elapsed: 58s, ETA:   514s2025-08-19 16:27:34,301 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:34,333 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 52/500, 0.9 task/s, elapsed: 59s, ETA:   512s2025-08-19 16:27:35,332 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:35,365 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 53/500, 0.9 task/s, elapsed: 60s, ETA:   510s2025-08-19 16:27:36,358 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:36,389 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 54/500, 0.9 task/s, elapsed: 61s, ETA:   508s2025-08-19 16:27:37,348 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:37,380 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 55/500, 0.9 task/s, elapsed: 62s, ETA:   505s2025-08-19 16:27:38,374 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:38,407 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 56/500, 0.9 task/s, elapsed: 63s, ETA:   503s2025-08-19 16:27:39,412 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:39,445 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 57/500, 0.9 task/s, elapsed: 65s, ETA:   501s2025-08-19 16:27:40,399 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:40,430 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 58/500, 0.9 task/s, elapsed: 65s, ETA:   499s2025-08-19 16:27:41,380 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:41,412 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 59/500, 0.9 task/s, elapsed: 66s, ETA:   497s2025-08-19 16:27:42,377 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:42,410 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 60/500, 0.9 task/s, elapsed: 67s, ETA:   495s2025-08-19 16:27:43,352 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:43,385 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 61/500, 0.9 task/s, elapsed: 68s, ETA:   493s2025-08-19 16:27:44,331 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:44,369 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 62/500, 0.9 task/s, elapsed: 69s, ETA:   490s2025-08-19 16:27:45,325 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:45,356 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 63/500, 0.9 task/s, elapsed: 70s, ETA:   488s2025-08-19 16:27:46,288 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:46,329 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>                            ] 64/500, 0.9 task/s, elapsed: 71s, ETA:   486s2025-08-19 16:27:47,251 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:47,286 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 65/500, 0.9 task/s, elapsed: 72s, ETA:   484s2025-08-19 16:27:48,232 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:48,265 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 66/500, 0.9 task/s, elapsed: 73s, ETA:   483s2025-08-19 16:27:49,222 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:49,261 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 67/500, 0.9 task/s, elapsed: 74s, ETA:   481s2025-08-19 16:27:50,262 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:50,297 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 68/500, 0.9 task/s, elapsed: 75s, ETA:   479s2025-08-19 16:27:51,260 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:51,299 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 69/500, 0.9 task/s, elapsed: 76s, ETA:   477s2025-08-19 16:27:52,262 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:52,296 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 70/500, 0.9 task/s, elapsed: 77s, ETA:   475s2025-08-19 16:27:53,212 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:53,244 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 71/500, 0.9 task/s, elapsed: 78s, ETA:   473s2025-08-19 16:27:54,236 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:54,273 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 72/500, 0.9 task/s, elapsed: 79s, ETA:   472s2025-08-19 16:27:55,168 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:55,200 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 73/500, 0.9 task/s, elapsed: 80s, ETA:   469s2025-08-19 16:27:56,092 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:56,124 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 74/500, 0.9 task/s, elapsed: 81s, ETA:   467s2025-08-19 16:27:57,078 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:57,115 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 75/500, 0.9 task/s, elapsed: 82s, ETA:   466s2025-08-19 16:27:58,033 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:58,066 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 76/500, 0.9 task/s, elapsed: 83s, ETA:   463s2025-08-19 16:27:58,945 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:58,979 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 77/500, 0.9 task/s, elapsed: 84s, ETA:   461s2025-08-19 16:27:59,852 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:27:59,883 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 78/500, 0.9 task/s, elapsed: 85s, ETA:   459s2025-08-19 16:28:00,751 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:00,784 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 79/500, 0.9 task/s, elapsed: 86s, ETA:   457s2025-08-19 16:28:01,817 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:01,848 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>                           ] 80/500, 0.9 task/s, elapsed: 87s, ETA:   456s2025-08-19 16:28:02,895 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:02,926 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                          ] 81/500, 0.9 task/s, elapsed: 88s, ETA:   455s2025-08-19 16:28:04,007 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:04,038 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                          ] 82/500, 0.9 task/s, elapsed: 89s, ETA:   454s2025-08-19 16:28:05,127 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:05,158 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                          ] 83/500, 0.9 task/s, elapsed: 90s, ETA:   453s2025-08-19 16:28:06,271 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:06,307 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                          ] 84/500, 0.9 task/s, elapsed: 91s, ETA:   453s2025-08-19 16:28:07,419 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:07,451 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                          ] 85/500, 0.9 task/s, elapsed: 93s, ETA:   452s2025-08-19 16:28:08,578 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:08,609 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                          ] 86/500, 0.9 task/s, elapsed: 94s, ETA:   451s2025-08-19 16:28:09,760 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:09,792 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                          ] 87/500, 0.9 task/s, elapsed: 95s, ETA:   451s2025-08-19 16:28:10,960 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:10,999 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                          ] 88/500, 0.9 task/s, elapsed: 96s, ETA:   450s2025-08-19 16:28:12,140 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:12,175 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                          ] 89/500, 0.9 task/s, elapsed: 97s, ETA:   449s2025-08-19 16:28:13,394 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:13,426 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                          ] 90/500, 0.9 task/s, elapsed: 99s, ETA:   449s2025-08-19 16:28:14,562 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:14,593 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                         ] 91/500, 0.9 task/s, elapsed: 100s, ETA:   448s2025-08-19 16:28:15,746 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:15,778 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                         ] 92/500, 0.9 task/s, elapsed: 101s, ETA:   447s2025-08-19 16:28:16,891 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:16,921 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                         ] 93/500, 0.9 task/s, elapsed: 102s, ETA:   447s2025-08-19 16:28:18,046 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:18,080 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                         ] 94/500, 0.9 task/s, elapsed: 103s, ETA:   446s2025-08-19 16:28:19,273 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:19,306 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                         ] 95/500, 0.9 task/s, elapsed: 104s, ETA:   445s2025-08-19 16:28:20,417 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:20,449 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                         ] 96/500, 0.9 task/s, elapsed: 106s, ETA:   444s2025-08-19 16:28:21,595 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:21,626 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                         ] 97/500, 0.9 task/s, elapsed: 107s, ETA:   443s2025-08-19 16:28:22,743 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:22,774 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                         ] 98/500, 0.9 task/s, elapsed: 108s, ETA:   442s2025-08-19 16:28:23,906 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:23,939 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                         ] 99/500, 0.9 task/s, elapsed: 109s, ETA:   442s2025-08-19 16:28:25,111 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:25,161 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                        ] 100/500, 0.9 task/s, elapsed: 110s, ETA:   441s2025-08-19 16:28:26,363 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:26,395 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                        ] 101/500, 0.9 task/s, elapsed: 112s, ETA:   440s2025-08-19 16:28:27,526 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:27,558 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                        ] 102/500, 0.9 task/s, elapsed: 113s, ETA:   440s2025-08-19 16:28:28,661 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:28,694 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>                        ] 103/500, 0.9 task/s, elapsed: 114s, ETA:   439s2025-08-19 16:28:29,829 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:29,860 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 104/500, 0.9 task/s, elapsed: 115s, ETA:   438s2025-08-19 16:28:31,025 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:31,056 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 105/500, 0.9 task/s, elapsed: 116s, ETA:   437s2025-08-19 16:28:32,149 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:32,182 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 106/500, 0.9 task/s, elapsed: 117s, ETA:   436s2025-08-19 16:28:33,344 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:33,388 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 107/500, 0.9 task/s, elapsed: 119s, ETA:   435s2025-08-19 16:28:34,560 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:34,595 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 108/500, 0.9 task/s, elapsed: 120s, ETA:   435s2025-08-19 16:28:35,749 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:35,781 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 109/500, 0.9 task/s, elapsed: 121s, ETA:   434s2025-08-19 16:28:36,912 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:36,944 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 110/500, 0.9 task/s, elapsed: 122s, ETA:   433s2025-08-19 16:28:38,036 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:38,066 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 111/500, 0.9 task/s, elapsed: 123s, ETA:   432s2025-08-19 16:28:39,170 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:39,202 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 112/500, 0.9 task/s, elapsed: 124s, ETA:   431s2025-08-19 16:28:40,384 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:40,417 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 113/500, 0.9 task/s, elapsed: 126s, ETA:   430s2025-08-19 16:28:41,535 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:41,568 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 114/500, 0.9 task/s, elapsed: 127s, ETA:   429s2025-08-19 16:28:42,669 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:42,712 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 115/500, 0.9 task/s, elapsed: 128s, ETA:   428s2025-08-19 16:28:43,774 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:43,812 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 116/500, 0.9 task/s, elapsed: 129s, ETA:   427s2025-08-19 16:28:44,864 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:44,898 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 117/500, 0.9 task/s, elapsed: 130s, ETA:   426s2025-08-19 16:28:45,898 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:45,933 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 118/500, 0.9 task/s, elapsed: 131s, ETA:   424s2025-08-19 16:28:46,893 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:46,927 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 119/500, 0.9 task/s, elapsed: 132s, ETA:   422s2025-08-19 16:28:47,806 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:47,846 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>                       ] 120/500, 0.9 task/s, elapsed: 133s, ETA:   421s2025-08-19 16:28:48,743 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:48,774 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 121/500, 0.9 task/s, elapsed: 134s, ETA:   419s2025-08-19 16:28:49,649 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:49,682 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:28:50,559 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-[>>>>>>>                      ] 122/500, 0.9 task/s, elapsed: 135s, ETA:   418s2025-08-19 16:28:50,593 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:28:51,584 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:51,625 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 123/500, 0.9 task/s, elapsed: 136s, ETA:   417s2025-08-19 16:28:52,695 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:52,736 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 124/500, 0.9 task/s, elapsed: 137s, ETA:   416s2025-08-19 16:28:53,721 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:53,752 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 125/500, 0.9 task/s, elapsed: 138s, ETA:   414s2025-08-19 16:28:54,637 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:54,667 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 126/500, 0.9 task/s, elapsed: 139s, ETA:   413s2025-08-19 16:28:55,536 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:55,566 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 127/500, 0.9 task/s, elapsed: 140s, ETA:   411s2025-08-19 16:28:56,433 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:56,465 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 128/500, 0.9 task/s, elapsed: 141s, ETA:   410s2025-08-19 16:28:57,343 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:57,379 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 129/500, 0.9 task/s, elapsed: 142s, ETA:   408s2025-08-19 16:28:58,318 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:58,355 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 130/500, 0.9 task/s, elapsed: 143s, ETA:   407s2025-08-19 16:28:59,442 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:28:59,487 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 131/500, 0.9 task/s, elapsed: 144s, ETA:   405s2025-08-19 16:29:00,467 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-[>>>>>>>                      ] 132/500, 0.9 task/s, elapsed: 145s, ETA:   404s2025-08-19 16:29:00,505 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 133/500, 0.9 task/s, elapsed: 146s, ETA:   402s2025-08-19 16:29:01,439 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:01,472 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 134/500, 0.9 task/s, elapsed: 147s, ETA:   400s2025-08-19 16:29:02,351 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:02,382 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 135/500, 0.9 task/s, elapsed: 147s, ETA:   399s2025-08-19 16:29:03,275 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:03,312 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 136/500, 0.9 task/s, elapsed: 148s, ETA:   397s2025-08-19 16:29:04,235 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:04,266 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>                      ] 137/500, 0.9 task/s, elapsed: 149s, ETA:   396s2025-08-19 16:29:05,145 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:05,176 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 138/500, 0.9 task/s, elapsed: 150s, ETA:   394s2025-08-19 16:29:06,061 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:06,093 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 139/500, 0.9 task/s, elapsed: 151s, ETA:   393s2025-08-19 16:29:06,997 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:07,031 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 140/500, 0.9 task/s, elapsed: 152s, ETA:   391s2025-08-19 16:29:07,966 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:07,998 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 141/500, 0.9 task/s, elapsed: 153s, ETA:   390s2025-08-19 16:29:08,922 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:08,954 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 142/500, 0.9 task/s, elapsed: 154s, ETA:   388s2025-08-19 16:29:09,892 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:09,925 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 143/500, 0.9 task/s, elapsed: 155s, ETA:   387s2025-08-19 16:29:10,867 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:10,899 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 144/500, 0.9 task/s, elapsed: 156s, ETA:   386s2025-08-19 16:29:11,828 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:11,862 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 145/500, 0.9 task/s, elapsed: 157s, ETA:   384s2025-08-19 16:29:12,786 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:12,819 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 146/500, 0.9 task/s, elapsed: 158s, ETA:   383s2025-08-19 16:29:13,717 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:13,748 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 147/500, 0.9 task/s, elapsed: 159s, ETA:   381s2025-08-19 16:29:14,641 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:14,674 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 148/500, 0.9 task/s, elapsed: 160s, ETA:   380s2025-08-19 16:29:15,604 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:15,636 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 149/500, 0.9 task/s, elapsed: 161s, ETA:   379s2025-08-19 16:29:16,552 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:16,586 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 150/500, 0.9 task/s, elapsed: 162s, ETA:   377s2025-08-19 16:29:17,584 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:17,623 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 151/500, 0.9 task/s, elapsed: 163s, ETA:   376s2025-08-19 16:29:18,639 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:18,673 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 152/500, 0.9 task/s, elapsed: 164s, ETA:   375s2025-08-19 16:29:19,604 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:19,638 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 153/500, 0.9 task/s, elapsed: 165s, ETA:   374s2025-08-19 16:29:20,541 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:20,576 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 154/500, 0.9 task/s, elapsed: 166s, ETA:   372s2025-08-19 16:29:21,563 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:21,597 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>                     ] 155/500, 0.9 task/s, elapsed: 167s, ETA:   371s2025-08-19 16:29:22,492 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:22,523 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 156/500, 0.9 task/s, elapsed: 168s, ETA:   369s2025-08-19 16:29:23,407 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:23,444 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 157/500, 0.9 task/s, elapsed: 168s, ETA:   368s2025-08-19 16:29:24,311 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:24,348 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 158/500, 0.9 task/s, elapsed: 169s, ETA:   367s2025-08-19 16:29:25,278 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:25,310 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 159/500, 0.9 task/s, elapsed: 170s, ETA:   365s2025-08-19 16:29:26,232 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:26,265 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 160/500, 0.9 task/s, elapsed: 171s, ETA:   364s2025-08-19 16:29:27,238 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:27,274 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 161/500, 0.9 task/s, elapsed: 172s, ETA:   363s2025-08-19 16:29:28,278 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:28,318 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 162/500, 0.9 task/s, elapsed: 173s, ETA:   362s2025-08-19 16:29:29,277 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:29,310 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 163/500, 0.9 task/s, elapsed: 174s, ETA:   361s2025-08-19 16:29:30,213 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:30,249 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 164/500, 0.9 task/s, elapsed: 175s, ETA:   360s2025-08-19 16:29:31,229 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:31,273 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 165/500, 0.9 task/s, elapsed: 176s, ETA:   358s2025-08-19 16:29:32,252 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:32,286 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 166/500, 0.9 task/s, elapsed: 177s, ETA:   357s2025-08-19 16:29:33,209 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:33,241 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 167/500, 0.9 task/s, elapsed: 178s, ETA:   356s2025-08-19 16:29:34,200 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:34,233 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 168/500, 0.9 task/s, elapsed: 179s, ETA:   354s2025-08-19 16:29:35,143 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:35,175 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 169/500, 0.9 task/s, elapsed: 180s, ETA:   353s2025-08-19 16:29:36,203 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:36,239 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 170/500, 0.9 task/s, elapsed: 181s, ETA:   352s2025-08-19 16:29:37,245 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:37,282 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 171/500, 0.9 task/s, elapsed: 182s, ETA:   351s2025-08-19 16:29:38,253 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:38,288 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>                    ] 172/500, 0.9 task/s, elapsed: 183s, ETA:   350s2025-08-19 16:29:39,266 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:39,300 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 173/500, 0.9 task/s, elapsed: 184s, ETA:   349s2025-08-19 16:29:40,268 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:40,303 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 174/500, 0.9 task/s, elapsed: 185s, ETA:   347s2025-08-19 16:29:41,238 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:41,271 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 175/500, 0.9 task/s, elapsed: 186s, ETA:   346s2025-08-19 16:29:42,204 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:42,239 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 176/500, 0.9 task/s, elapsed: 187s, ETA:   345s2025-08-19 16:29:43,223 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:43,256 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 177/500, 0.9 task/s, elapsed: 188s, ETA:   344s2025-08-19 16:29:44,240 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:44,279 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 178/500, 0.9 task/s, elapsed: 189s, ETA:   343s2025-08-19 16:29:45,210 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:45,243 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 179/500, 0.9 task/s, elapsed: 190s, ETA:   341s2025-08-19 16:29:46,219 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:46,252 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 180/500, 0.9 task/s, elapsed: 191s, ETA:   340s2025-08-19 16:29:47,194 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:47,226 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 181/500, 0.9 task/s, elapsed: 192s, ETA:   339s2025-08-19 16:29:48,196 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:48,228 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 182/500, 0.9 task/s, elapsed: 193s, ETA:   338s2025-08-19 16:29:49,162 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:49,193 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 183/500, 0.9 task/s, elapsed: 194s, ETA:   336s2025-08-19 16:29:50,113 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:50,145 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 184/500, 0.9 task/s, elapsed: 195s, ETA:   335s2025-08-19 16:29:51,048 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:51,081 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 185/500, 0.9 task/s, elapsed: 196s, ETA:   334s2025-08-19 16:29:52,003 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:52,034 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 186/500, 0.9 task/s, elapsed: 197s, ETA:   333s2025-08-19 16:29:52,948 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:52,981 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 187/500, 0.9 task/s, elapsed: 198s, ETA:   331s2025-08-19 16:29:53,876 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:53,908 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 188/500, 0.9 task/s, elapsed: 199s, ETA:   330s2025-08-19 16:29:54,821 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:54,852 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>                   ] 189/500, 0.9 task/s, elapsed: 200s, ETA:   329s2025-08-19 16:29:55,770 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:55,801 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 190/500, 0.9 task/s, elapsed: 201s, ETA:   328s2025-08-19 16:29:56,715 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:56,752 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 191/500, 0.9 task/s, elapsed: 202s, ETA:   327s2025-08-19 16:29:57,700 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:57,733 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 192/500, 0.9 task/s, elapsed: 203s, ETA:   325s2025-08-19 16:29:58,633 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:58,665 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 193/500, 0.9 task/s, elapsed: 204s, ETA:   324s2025-08-19 16:29:59,540 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:29:59,572 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 194/500, 0.9 task/s, elapsed: 205s, ETA:   323s2025-08-19 16:30:00,452 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:00,490 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 195/500, 0.9 task/s, elapsed: 206s, ETA:   321s2025-08-19 16:30:01,386 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:01,420 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 196/500, 0.9 task/s, elapsed: 206s, ETA:   320s2025-08-19 16:30:02,277 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:02,310 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 197/500, 1.0 task/s, elapsed: 207s, ETA:   319s2025-08-19 16:30:03,291 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:03,323 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 198/500, 1.0 task/s, elapsed: 208s, ETA:   318s2025-08-19 16:30:04,306 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:04,340 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 199/500, 1.0 task/s, elapsed: 209s, ETA:   317s2025-08-19 16:30:05,299 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:05,329 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 200/500, 1.0 task/s, elapsed: 210s, ETA:   316s2025-08-19 16:30:06,397 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:06,428 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 201/500, 1.0 task/s, elapsed: 211s, ETA:   315s2025-08-19 16:30:07,413 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:07,444 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 202/500, 1.0 task/s, elapsed: 213s, ETA:   314s2025-08-19 16:30:08,421 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:08,451 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 203/500, 1.0 task/s, elapsed: 214s, ETA:   312s2025-08-19 16:30:09,396 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:09,426 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 204/500, 1.0 task/s, elapsed: 215s, ETA:   311s2025-08-19 16:30:10,474 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:10,510 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 205/500, 1.0 task/s, elapsed: 216s, ETA:   310s2025-08-19 16:30:11,519 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:11,551 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>                  ] 206/500, 1.0 task/s, elapsed: 217s, ETA:   309s2025-08-19 16:30:12,530 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:12,565 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 207/500, 1.0 task/s, elapsed: 218s, ETA:   308s2025-08-19 16:30:13,557 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:13,591 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 208/500, 1.0 task/s, elapsed: 219s, ETA:   307s2025-08-19 16:30:14,604 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:14,635 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 209/500, 1.0 task/s, elapsed: 220s, ETA:   306s2025-08-19 16:30:15,615 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:15,650 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 210/500, 1.0 task/s, elapsed: 221s, ETA:   305s2025-08-19 16:30:16,605 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:16,637 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 211/500, 1.0 task/s, elapsed: 222s, ETA:   304s2025-08-19 16:30:17,619 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:17,658 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 212/500, 1.0 task/s, elapsed: 223s, ETA:   303s2025-08-19 16:30:18,618 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:18,653 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 213/500, 1.0 task/s, elapsed: 224s, ETA:   301s2025-08-19 16:30:19,581 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:19,612 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 214/500, 1.0 task/s, elapsed: 225s, ETA:   300s2025-08-19 16:30:20,607 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:20,638 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 215/500, 1.0 task/s, elapsed: 226s, ETA:   299s2025-08-19 16:30:21,622 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:21,663 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 216/500, 1.0 task/s, elapsed: 227s, ETA:   298s2025-08-19 16:30:22,677 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:22,711 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 217/500, 1.0 task/s, elapsed: 228s, ETA:   297s2025-08-19 16:30:23,663 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:23,696 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 218/500, 1.0 task/s, elapsed: 229s, ETA:   296s2025-08-19 16:30:24,687 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:24,726 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 219/500, 1.0 task/s, elapsed: 230s, ETA:   295s2025-08-19 16:30:25,689 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:25,723 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 220/500, 1.0 task/s, elapsed: 231s, ETA:   294s2025-08-19 16:30:26,750 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:26,783 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 221/500, 1.0 task/s, elapsed: 232s, ETA:   293s2025-08-19 16:30:27,717 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:27,752 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 222/500, 1.0 task/s, elapsed: 233s, ETA:   292s2025-08-19 16:30:28,685 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:28,717 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 223/500, 1.0 task/s, elapsed: 234s, ETA:   290s2025-08-19 16:30:29,643 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:29,676 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>                 ] 224/500, 1.0 task/s, elapsed: 235s, ETA:   289s2025-08-19 16:30:30,632 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:30,667 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 225/500, 1.0 task/s, elapsed: 236s, ETA:   288s2025-08-19 16:30:31,594 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:31,627 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 226/500, 1.0 task/s, elapsed: 237s, ETA:   287s2025-08-19 16:30:32,546 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:32,578 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 227/500, 1.0 task/s, elapsed: 238s, ETA:   286s2025-08-19 16:30:33,511 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:33,548 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 228/500, 1.0 task/s, elapsed: 239s, ETA:   285s2025-08-19 16:30:34,504 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:34,539 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 229/500, 1.0 task/s, elapsed: 240s, ETA:   284s2025-08-19 16:30:35,473 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:35,506 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 230/500, 1.0 task/s, elapsed: 241s, ETA:   282s2025-08-19 16:30:36,425 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:36,461 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 231/500, 1.0 task/s, elapsed: 242s, ETA:   281s2025-08-19 16:30:37,425 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:37,457 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 232/500, 1.0 task/s, elapsed: 243s, ETA:   280s2025-08-19 16:30:38,358 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:38,391 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 233/500, 1.0 task/s, elapsed: 243s, ETA:   279s2025-08-19 16:30:39,298 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:39,337 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 234/500, 1.0 task/s, elapsed: 244s, ETA:   278s2025-08-19 16:30:40,292 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:40,324 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 235/500, 1.0 task/s, elapsed: 245s, ETA:   277s2025-08-19 16:30:41,210 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:41,244 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 236/500, 1.0 task/s, elapsed: 246s, ETA:   275s2025-08-19 16:30:42,338 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:42,373 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 237/500, 1.0 task/s, elapsed: 247s, ETA:   274s2025-08-19 16:30:43,481 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:43,518 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 238/500, 1.0 task/s, elapsed: 249s, ETA:   274s2025-08-19 16:30:44,658 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:44,700 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 239/500, 1.0 task/s, elapsed: 250s, ETA:   273s2025-08-19 16:30:45,864 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:45,904 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 240/500, 1.0 task/s, elapsed: 251s, ETA:   272s2025-08-19 16:30:47,012 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:47,047 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>                ] 241/500, 1.0 task/s, elapsed: 252s, ETA:   271s2025-08-19 16:30:48,093 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:48,126 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 242/500, 1.0 task/s, elapsed: 253s, ETA:   270s2025-08-19 16:30:49,228 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:49,265 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 243/500, 1.0 task/s, elapsed: 254s, ETA:   269s2025-08-19 16:30:50,385 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:50,417 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 244/500, 1.0 task/s, elapsed: 256s, ETA:   268s2025-08-19 16:30:51,534 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:51,578 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 245/500, 1.0 task/s, elapsed: 257s, ETA:   267s2025-08-19 16:30:52,733 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:52,767 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 246/500, 1.0 task/s, elapsed: 258s, ETA:   266s2025-08-19 16:30:53,842 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:53,875 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 247/500, 1.0 task/s, elapsed: 259s, ETA:   265s2025-08-19 16:30:54,957 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:54,991 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 248/500, 1.0 task/s, elapsed: 260s, ETA:   264s2025-08-19 16:30:56,063 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:56,097 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 249/500, 1.0 task/s, elapsed: 261s, ETA:   263s2025-08-19 16:30:57,173 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:57,207 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 250/500, 1.0 task/s, elapsed: 262s, ETA:   262s2025-08-19 16:30:58,296 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:58,329 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 251/500, 1.0 task/s, elapsed: 263s, ETA:   261s2025-08-19 16:30:59,431 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:30:59,466 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 252/500, 1.0 task/s, elapsed: 265s, ETA:   260s2025-08-19 16:31:00,568 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:00,606 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 253/500, 1.0 task/s, elapsed: 266s, ETA:   259s2025-08-19 16:31:01,721 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:01,754 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 254/500, 1.0 task/s, elapsed: 267s, ETA:   258s2025-08-19 16:31:02,812 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:02,844 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 255/500, 1.0 task/s, elapsed: 268s, ETA:   257s2025-08-19 16:31:03,958 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:03,991 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 256/500, 1.0 task/s, elapsed: 269s, ETA:   256s2025-08-19 16:31:05,036 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:05,069 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 257/500, 1.0 task/s, elapsed: 270s, ETA:   255s2025-08-19 16:31:06,127 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:06,160 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>               ] 258/500, 1.0 task/s, elapsed: 271s, ETA:   254s2025-08-19 16:31:07,310 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:07,347 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 259/500, 1.0 task/s, elapsed: 272s, ETA:   253s2025-08-19 16:31:08,452 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:08,487 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 260/500, 1.0 task/s, elapsed: 274s, ETA:   253s2025-08-19 16:31:09,568 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:09,603 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 261/500, 1.0 task/s, elapsed: 275s, ETA:   252s2025-08-19 16:31:10,675 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:10,715 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 262/500, 0.9 task/s, elapsed: 276s, ETA:   251s2025-08-19 16:31:11,766 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:11,800 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 263/500, 0.9 task/s, elapsed: 277s, ETA:   250s2025-08-19 16:31:12,824 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:12,856 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 264/500, 0.9 task/s, elapsed: 278s, ETA:   248s2025-08-19 16:31:13,877 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:13,910 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 265/500, 0.9 task/s, elapsed: 279s, ETA:   247s2025-08-19 16:31:14,905 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:14,936 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 266/500, 0.9 task/s, elapsed: 280s, ETA:   246s2025-08-19 16:31:15,954 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:15,989 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 267/500, 0.9 task/s, elapsed: 281s, ETA:   245s2025-08-19 16:31:17,001 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:17,035 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 268/500, 1.0 task/s, elapsed: 282s, ETA:   244s2025-08-19 16:31:18,061 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:18,094 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 269/500, 0.9 task/s, elapsed: 283s, ETA:   243s2025-08-19 16:31:19,113 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:19,146 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 270/500, 1.0 task/s, elapsed: 284s, ETA:   242s2025-08-19 16:31:20,092 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:20,123 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 271/500, 1.0 task/s, elapsed: 285s, ETA:   241s2025-08-19 16:31:21,073 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:21,105 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 272/500, 1.0 task/s, elapsed: 286s, ETA:   240s2025-08-19 16:31:22,077 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:22,109 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 273/500, 1.0 task/s, elapsed: 287s, ETA:   239s2025-08-19 16:31:23,055 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:23,088 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 274/500, 1.0 task/s, elapsed: 288s, ETA:   238s2025-08-19 16:31:24,028 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:24,060 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>              ] 275/500, 1.0 task/s, elapsed: 289s, ETA:   237s2025-08-19 16:31:25,043 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:25,081 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 276/500, 1.0 task/s, elapsed: 290s, ETA:   235s2025-08-19 16:31:26,123 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:26,163 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 277/500, 1.0 task/s, elapsed: 291s, ETA:   234s2025-08-19 16:31:27,220 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:27,255 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 278/500, 1.0 task/s, elapsed: 292s, ETA:   234s2025-08-19 16:31:28,341 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:28,376 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 279/500, 1.0 task/s, elapsed: 294s, ETA:   233s2025-08-19 16:31:29,416 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:29,448 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 280/500, 1.0 task/s, elapsed: 295s, ETA:   232s2025-08-19 16:31:30,477 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:30,509 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 281/500, 1.0 task/s, elapsed: 296s, ETA:   231s2025-08-19 16:31:31,605 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:31,638 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 282/500, 0.9 task/s, elapsed: 297s, ETA:   230s2025-08-19 16:31:32,705 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:32,740 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 283/500, 0.9 task/s, elapsed: 298s, ETA:   229s2025-08-19 16:31:33,840 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:33,877 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:31:35,030 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:35,064 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 284/500, 0.9 task/s, elapsed: 299s, ETA:   228s2025-08-19 16:31:36,293 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:36,346 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 285/500, 0.9 task/s, elapsed: 301s, ETA:   227s2025-08-19 16:31:37,705 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:37,741 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 286/500, 0.9 task/s, elapsed: 302s, ETA:   226s2025-08-19 16:31:38,968 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:39,005 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 287/500, 0.9 task/s, elapsed: 303s, ETA:   225s2025-08-19 16:31:40,230 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:40,263 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 288/500, 0.9 task/s, elapsed: 305s, ETA:   224s2025-08-19 16:31:41,409 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:41,443 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 289/500, 0.9 task/s, elapsed: 306s, ETA:   223s2025-08-19 16:31:42,614 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:42,646 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 290/500, 0.9 task/s, elapsed: 307s, ETA:   222s2025-08-19 16:31:43,783 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:43,816 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 291/500, 0.9 task/s, elapsed: 308s, ETA:   221s2025-08-19 16:31:45,000 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:45,041 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 292/500, 0.9 task/s, elapsed: 309s, ETA:   220s2025-08-19 16:31:46,265 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:46,297 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>             ] 293/500, 0.9 task/s, elapsed: 311s, ETA:   219s2025-08-19 16:31:47,413 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:47,446 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 294/500, 0.9 task/s, elapsed: 312s, ETA:   218s2025-08-19 16:31:48,626 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-[>>>>>>>>>>>>>>>>>            ] 295/500, 0.9 task/s, elapsed: 313s, ETA:   217s2025-08-19 16:31:48,663 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 296/500, 0.9 task/s, elapsed: 314s, ETA:   216s2025-08-19 16:31:49,801 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:49,834 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:31:50,962 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-[>>>>>>>>>>>>>>>>>            ] 297/500, 0.9 task/s, elapsed: 315s, ETA:   215s2025-08-19 16:31:50,999 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 298/500, 0.9 task/s, elapsed: 316s, ETA:   215s2025-08-19 16:31:52,172 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:52,207 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 299/500, 0.9 task/s, elapsed: 318s, ETA:   214s2025-08-19 16:31:53,335 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:53,369 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:31:54,514 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-[>>>>>>>>>>>>>>>>>            ] 300/500, 0.9 task/s, elapsed: 319s, ETA:   213s2025-08-19 16:31:54,553 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:31:55,671 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:55,702 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 301/500, 0.9 task/s, elapsed: 320s, ETA:   212s2025-08-19 16:31:56,850 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:56,882 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 302/500, 0.9 task/s, elapsed: 321s, ETA:   211s2025-08-19 16:31:58,122 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:58,155 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 303/500, 0.9 task/s, elapsed: 323s, ETA:   210s2025-08-19 16:31:59,333 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:31:59,363 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 304/500, 0.9 task/s, elapsed: 324s, ETA:   209s2025-08-19 16:32:00,548 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:00,579 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 305/500, 0.9 task/s, elapsed: 325s, ETA:   208s2025-08-19 16:32:01,727 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:01,760 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 306/500, 0.9 task/s, elapsed: 326s, ETA:   207s2025-08-19 16:32:02,916 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:02,950 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 307/500, 0.9 task/s, elapsed: 328s, ETA:   206s2025-08-19 16:32:04,134 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:04,166 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 308/500, 0.9 task/s, elapsed: 329s, ETA:   205s2025-08-19 16:32:05,318 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:05,351 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 309/500, 0.9 task/s, elapsed: 330s, ETA:   204s2025-08-19 16:32:06,543 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:06,581 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>            ] 310/500, 0.9 task/s, elapsed: 331s, ETA:   203s2025-08-19 16:32:07,730 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:07,765 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 311/500, 0.9 task/s, elapsed: 333s, ETA:   202s2025-08-19 16:32:08,883 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:08,914 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 312/500, 0.9 task/s, elapsed: 334s, ETA:   201s2025-08-19 16:32:09,974 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:10,004 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 313/500, 0.9 task/s, elapsed: 335s, ETA:   200s2025-08-19 16:32:11,037 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:11,068 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 314/500, 0.9 task/s, elapsed: 336s, ETA:   199s2025-08-19 16:32:12,057 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:12,089 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 315/500, 0.9 task/s, elapsed: 337s, ETA:   198s2025-08-19 16:32:13,305 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:13,337 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 316/500, 0.9 task/s, elapsed: 338s, ETA:   197s2025-08-19 16:32:14,518 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:14,549 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 317/500, 0.9 task/s, elapsed: 340s, ETA:   196s2025-08-19 16:32:15,778 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:15,809 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 318/500, 0.9 task/s, elapsed: 341s, ETA:   195s2025-08-19 16:32:17,056 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:17,094 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 319/500, 0.9 task/s, elapsed: 342s, ETA:   194s2025-08-19 16:32:18,309 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:18,350 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 320/500, 0.9 task/s, elapsed: 343s, ETA:   193s2025-08-19 16:32:19,622 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:19,657 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 321/500, 0.9 task/s, elapsed: 344s, ETA:   192s2025-08-19 16:32:20,876 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:20,908 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 322/500, 0.9 task/s, elapsed: 345s, ETA:   191s[>>>>>>>>>>>>>>>>>>           ] 323/500, 0.9 task/s, elapsed: 346s, ETA:   190s2025-08-19 16:32:22,176 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:22,213 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 324/500, 0.9 task/s, elapsed: 348s, ETA:   189s2025-08-19 16:32:23,443 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:23,475 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 325/500, 0.9 task/s, elapsed: 349s, ETA:   188s2025-08-19 16:32:24,787 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:24,821 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 326/500, 0.9 task/s, elapsed: 350s, ETA:   187s2025-08-19 16:32:26,053 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:26,088 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>           ] 327/500, 0.9 task/s, elapsed: 351s, ETA:   186s2025-08-19 16:32:27,370 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:27,406 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 328/500, 0.9 task/s, elapsed: 353s, ETA:   185s2025-08-19 16:32:28,666 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:28,697 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 329/500, 0.9 task/s, elapsed: 354s, ETA:   184s2025-08-19 16:32:30,002 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:30,037 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 330/500, 0.9 task/s, elapsed: 355s, ETA:   183s2025-08-19 16:32:31,299 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:31,335 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 331/500, 0.9 task/s, elapsed: 357s, ETA:   182s2025-08-19 16:32:32,621 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:32,652 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 332/500, 0.9 task/s, elapsed: 358s, ETA:   181s2025-08-19 16:32:33,959 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:33,992 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 333/500, 0.9 task/s, elapsed: 359s, ETA:   180s2025-08-19 16:32:35,307 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:35,339 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 334/500, 0.9 task/s, elapsed: 361s, ETA:   179s2025-08-19 16:32:36,662 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:36,696 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 335/500, 0.9 task/s, elapsed: 362s, ETA:   178s2025-08-19 16:32:37,960 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:37,994 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 336/500, 0.9 task/s, elapsed: 363s, ETA:   177s2025-08-19 16:32:39,318 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:39,351 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 337/500, 0.9 task/s, elapsed: 365s, ETA:   176s2025-08-19 16:32:40,650 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:40,682 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 338/500, 0.9 task/s, elapsed: 366s, ETA:   175s2025-08-19 16:32:41,974 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:42,004 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 339/500, 0.9 task/s, elapsed: 367s, ETA:   174s2025-08-19 16:32:43,226 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:43,265 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 340/500, 0.9 task/s, elapsed: 368s, ETA:   173s2025-08-19 16:32:44,474 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:44,505 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 341/500, 0.9 task/s, elapsed: 370s, ETA:   172s2025-08-19 16:32:45,681 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:45,719 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 342/500, 0.9 task/s, elapsed: 371s, ETA:   171s2025-08-19 16:32:46,859 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:46,893 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 343/500, 0.9 task/s, elapsed: 372s, ETA:   170s2025-08-19 16:32:48,038 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:48,071 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>          ] 344/500, 0.9 task/s, elapsed: 373s, ETA:   169s2025-08-19 16:32:49,209 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:49,240 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 345/500, 0.9 task/s, elapsed: 374s, ETA:   168s2025-08-19 16:32:50,303 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:50,335 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 346/500, 0.9 task/s, elapsed: 375s, ETA:   167s2025-08-19 16:32:51,449 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:51,487 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 347/500, 0.9 task/s, elapsed: 377s, ETA:   166s2025-08-19 16:32:52,611 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:52,645 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 348/500, 0.9 task/s, elapsed: 378s, ETA:   165s2025-08-19 16:32:53,755 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:53,788 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 349/500, 0.9 task/s, elapsed: 379s, ETA:   164s2025-08-19 16:32:54,901 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:54,934 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 350/500, 0.9 task/s, elapsed: 380s, ETA:   163s2025-08-19 16:32:56,023 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:56,056 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 351/500, 0.9 task/s, elapsed: 381s, ETA:   162s2025-08-19 16:32:57,169 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:57,210 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 352/500, 0.9 task/s, elapsed: 382s, ETA:   161s2025-08-19 16:32:58,288 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:58,325 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 353/500, 0.9 task/s, elapsed: 383s, ETA:   160s2025-08-19 16:32:59,345 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:32:59,383 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 354/500, 0.9 task/s, elapsed: 384s, ETA:   159s2025-08-19 16:33:00,447 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:00,488 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 355/500, 0.9 task/s, elapsed: 385s, ETA:   157s2025-08-19 16:33:01,463 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:01,576 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 356/500, 0.9 task/s, elapsed: 386s, ETA:   156s2025-08-19 16:33:02,546 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:02,581 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 357/500, 0.9 task/s, elapsed: 388s, ETA:   155s2025-08-19 16:33:03,585 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:03,616 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 358/500, 0.9 task/s, elapsed: 389s, ETA:   154s2025-08-19 16:33:04,597 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:04,629 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 359/500, 0.9 task/s, elapsed: 390s, ETA:   153s2025-08-19 16:33:05,897 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:05,949 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 360/500, 0.9 task/s, elapsed: 391s, ETA:   152s2025-08-19 16:33:06,988 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:07,022 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 361/500, 0.9 task/s, elapsed: 392s, ETA:   151s2025-08-19 16:33:08,065 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:08,102 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>         ] 362/500, 0.9 task/s, elapsed: 393s, ETA:   150s2025-08-19 16:33:09,125 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:09,157 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 363/500, 0.9 task/s, elapsed: 394s, ETA:   149s2025-08-19 16:33:10,149 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:10,182 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 364/500, 0.9 task/s, elapsed: 395s, ETA:   148s2025-08-19 16:33:11,251 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:11,290 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 365/500, 0.9 task/s, elapsed: 396s, ETA:   147s2025-08-19 16:33:12,320 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:12,352 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 366/500, 0.9 task/s, elapsed: 397s, ETA:   146s2025-08-19 16:33:13,338 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:13,370 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 367/500, 0.9 task/s, elapsed: 398s, ETA:   144s2025-08-19 16:33:14,398 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:14,430 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 368/500, 0.9 task/s, elapsed: 400s, ETA:   143s2025-08-19 16:33:15,418 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:15,451 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 369/500, 0.9 task/s, elapsed: 401s, ETA:   142s2025-08-19 16:33:16,462 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:16,497 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 370/500, 0.9 task/s, elapsed: 402s, ETA:   141s2025-08-19 16:33:17,522 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:17,553 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 371/500, 0.9 task/s, elapsed: 403s, ETA:   140s2025-08-19 16:33:18,621 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:18,652 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 372/500, 0.9 task/s, elapsed: 404s, ETA:   139s2025-08-19 16:33:19,675 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:19,708 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 373/500, 0.9 task/s, elapsed: 405s, ETA:   138s2025-08-19 16:33:20,773 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:20,806 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 374/500, 0.9 task/s, elapsed: 406s, ETA:   137s2025-08-19 16:33:21,833 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:21,867 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 375/500, 0.9 task/s, elapsed: 407s, ETA:   136s2025-08-19 16:33:22,886 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:22,921 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 376/500, 0.9 task/s, elapsed: 408s, ETA:   135s2025-08-19 16:33:23,972 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:24,005 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 377/500, 0.9 task/s, elapsed: 409s, ETA:   133s2025-08-19 16:33:25,013 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:25,045 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 378/500, 0.9 task/s, elapsed: 410s, ETA:   132s2025-08-19 16:33:26,074 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:26,110 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>        ] 379/500, 0.9 task/s, elapsed: 411s, ETA:   131s2025-08-19 16:33:27,113 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:27,144 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 380/500, 0.9 task/s, elapsed: 412s, ETA:   130s2025-08-19 16:33:28,145 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:28,178 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 381/500, 0.9 task/s, elapsed: 413s, ETA:   129s2025-08-19 16:33:29,199 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:29,231 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 382/500, 0.9 task/s, elapsed: 414s, ETA:   128s2025-08-19 16:33:30,200 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:30,233 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 383/500, 0.9 task/s, elapsed: 415s, ETA:   127s2025-08-19 16:33:31,202 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:31,234 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 384/500, 0.9 task/s, elapsed: 416s, ETA:   126s2025-08-19 16:33:32,266 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:32,299 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 385/500, 0.9 task/s, elapsed: 417s, ETA:   125s2025-08-19 16:33:33,328 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:33,364 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 386/500, 0.9 task/s, elapsed: 418s, ETA:   124s2025-08-19 16:33:34,434 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:34,469 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 387/500, 0.9 task/s, elapsed: 420s, ETA:   123s2025-08-19 16:33:35,562 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:35,595 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 388/500, 0.9 task/s, elapsed: 421s, ETA:   121s2025-08-19 16:33:36,709 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:36,745 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 389/500, 0.9 task/s, elapsed: 422s, ETA:   120s2025-08-19 16:33:37,800 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:37,832 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 390/500, 0.9 task/s, elapsed: 423s, ETA:   119s2025-08-19 16:33:38,886 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:38,920 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 391/500, 0.9 task/s, elapsed: 424s, ETA:   118s2025-08-19 16:33:39,905 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:39,939 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 392/500, 0.9 task/s, elapsed: 425s, ETA:   117s2025-08-19 16:33:40,898 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:40,931 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 393/500, 0.9 task/s, elapsed: 426s, ETA:   116s2025-08-19 16:33:41,900 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:41,934 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 394/500, 0.9 task/s, elapsed: 427s, ETA:   115s2025-08-19 16:33:42,846 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:42,879 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 395/500, 0.9 task/s, elapsed: 428s, ETA:   114s2025-08-19 16:33:43,745 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:43,777 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>       ] 396/500, 0.9 task/s, elapsed: 429s, ETA:   113s2025-08-19 16:33:44,978 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 397/500, 0.9 task/s, elapsed: 430s, ETA:   112s2025-08-19 16:33:45,730 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:33:46,842 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:46,874 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 398/500, 0.9 task/s, elapsed: 432s, ETA:   111s2025-08-19 16:33:48,054 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:48,092 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 399/500, 0.9 task/s, elapsed: 433s, ETA:   110s2025-08-19 16:33:49,253 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:49,286 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:33:50,438 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:50,469 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 400/500, 0.9 task/s, elapsed: 435s, ETA:   109s2025-08-19 16:33:51,650 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:51,680 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 401/500, 0.9 task/s, elapsed: 436s, ETA:   108s[>>>>>>>>>>>>>>>>>>>>>>>      ] 402/500, 0.9 task/s, elapsed: 437s, ETA:   107s2025-08-19 16:33:52,876 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:52,915 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 403/500, 0.9 task/s, elapsed: 438s, ETA:   105s2025-08-19 16:33:54,118 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:54,159 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 404/500, 0.9 task/s, elapsed: 439s, ETA:   104s2025-08-19 16:33:55,334 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:55,366 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 405/500, 0.9 task/s, elapsed: 441s, ETA:   103s2025-08-19 16:33:56,519 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:56,552 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 406/500, 0.9 task/s, elapsed: 442s, ETA:   102s2025-08-19 16:33:57,743 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:57,776 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 407/500, 0.9 task/s, elapsed: 443s, ETA:   101s2025-08-19 16:33:58,927 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:33:58,959 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 408/500, 0.9 task/s, elapsed: 444s, ETA:   100s2025-08-19 16:34:00,180 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:00,220 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 409/500, 0.9 task/s, elapsed: 445s, ETA:    99s2025-08-19 16:34:01,465 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:01,497 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 410/500, 0.9 task/s, elapsed: 447s, ETA:    98s2025-08-19 16:34:02,685 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:02,722 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 411/500, 0.9 task/s, elapsed: 448s, ETA:    97s2025-08-19 16:34:04,041 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:04,077 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 412/500, 0.9 task/s, elapsed: 449s, ETA:    96s2025-08-19 16:34:05,353 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:05,400 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>      ] 413/500, 0.9 task/s, elapsed: 451s, ETA:    95s2025-08-19 16:34:06,594 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:06,630 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 414/500, 0.9 task/s, elapsed: 452s, ETA:    94s2025-08-19 16:34:07,779 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:07,814 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 415/500, 0.9 task/s, elapsed: 453s, ETA:    93s2025-08-19 16:34:08,973 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:09,008 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 416/500, 0.9 task/s, elapsed: 454s, ETA:    92s2025-08-19 16:34:10,154 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:10,189 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 417/500, 0.9 task/s, elapsed: 455s, ETA:    91s2025-08-19 16:34:11,319 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:11,355 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 418/500, 0.9 task/s, elapsed: 456s, ETA:    90s2025-08-19 16:34:12,503 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:12,539 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 419/500, 0.9 task/s, elapsed: 458s, ETA:    88s2025-08-19 16:34:13,675 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:13,707 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 420/500, 0.9 task/s, elapsed: 459s, ETA:    87s2025-08-19 16:34:14,794 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:14,828 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 421/500, 0.9 task/s, elapsed: 460s, ETA:    86s2025-08-19 16:34:15,943 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:15,978 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 422/500, 0.9 task/s, elapsed: 461s, ETA:    85s2025-08-19 16:34:17,053 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:17,086 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 423/500, 0.9 task/s, elapsed: 462s, ETA:    84s2025-08-19 16:34:18,132 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:18,169 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 424/500, 0.9 task/s, elapsed: 463s, ETA:    83s2025-08-19 16:34:19,186 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:19,571 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 425/500, 0.9 task/s, elapsed: 465s, ETA:    82s2025-08-19 16:34:20,595 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:20,629 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 426/500, 0.9 task/s, elapsed: 466s, ETA:    81s2025-08-19 16:34:21,662 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:21,695 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 427/500, 0.9 task/s, elapsed: 467s, ETA:    80s2025-08-19 16:34:22,684 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:22,717 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 428/500, 0.9 task/s, elapsed: 468s, ETA:    79s2025-08-19 16:34:23,690 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:23,722 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 429/500, 0.9 task/s, elapsed: 469s, ETA:    78s2025-08-19 16:34:24,694 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:24,726 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 430/500, 0.9 task/s, elapsed: 470s, ETA:    76s2025-08-19 16:34:25,676 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:25,710 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>     ] 431/500, 0.9 task/s, elapsed: 471s, ETA:    75s2025-08-19 16:34:26,643 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:26,678 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 432/500, 0.9 task/s, elapsed: 472s, ETA:    74s2025-08-19 16:34:27,607 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:27,640 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 433/500, 0.9 task/s, elapsed: 473s, ETA:    73s2025-08-19 16:34:28,520 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:28,553 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 434/500, 0.9 task/s, elapsed: 474s, ETA:    72s2025-08-19 16:34:29,424 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:29,458 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 435/500, 0.9 task/s, elapsed: 474s, ETA:    71s2025-08-19 16:34:30,341 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:30,373 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 436/500, 0.9 task/s, elapsed: 475s, ETA:    70s2025-08-19 16:34:31,357 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:31,390 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 437/500, 0.9 task/s, elapsed: 476s, ETA:    69s2025-08-19 16:34:32,388 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:32,419 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 438/500, 0.9 task/s, elapsed: 477s, ETA:    68s2025-08-19 16:34:33,444 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:33,475 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 439/500, 0.9 task/s, elapsed: 479s, ETA:    66s2025-08-19 16:34:34,481 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:34,513 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 440/500, 0.9 task/s, elapsed: 480s, ETA:    65s2025-08-19 16:34:35,537 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:35,570 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 441/500, 0.9 task/s, elapsed: 481s, ETA:    64s2025-08-19 16:34:36,618 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:36,658 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 442/500, 0.9 task/s, elapsed: 482s, ETA:    63s2025-08-19 16:34:37,698 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:37,729 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 443/500, 0.9 task/s, elapsed: 483s, ETA:    62s2025-08-19 16:34:38,768 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:38,801 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 444/500, 0.9 task/s, elapsed: 484s, ETA:    61s2025-08-19 16:34:39,868 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:39,902 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 445/500, 0.9 task/s, elapsed: 485s, ETA:    60s2025-08-19 16:34:40,937 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:40,971 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 446/500, 0.9 task/s, elapsed: 486s, ETA:    59s2025-08-19 16:34:42,023 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:42,056 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 447/500, 0.9 task/s, elapsed: 487s, ETA:    58s2025-08-19 16:34:43,153 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:43,185 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 448/500, 0.9 task/s, elapsed: 488s, ETA:    57s2025-08-19 16:34:44,241 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:44,281 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 449/500, 0.9 task/s, elapsed: 489s, ETA:    56s2025-08-19 16:34:45,387 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:45,429 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 450/500, 0.9 task/s, elapsed: 491s, ETA:    55s2025-08-19 16:34:46,504 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:46,537 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 451/500, 0.9 task/s, elapsed: 492s, ETA:    53s2025-08-19 16:34:47,559 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:47,591 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 452/500, 0.9 task/s, elapsed: 493s, ETA:    52s2025-08-19 16:34:48,650 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:48,684 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 453/500, 0.9 task/s, elapsed: 494s, ETA:    51s2025-08-19 16:34:49,737 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:49,776 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 454/500, 0.9 task/s, elapsed: 495s, ETA:    50s2025-08-19 16:34:50,794 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:50,826 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 455/500, 0.9 task/s, elapsed: 496s, ETA:    49s2025-08-19 16:34:51,884 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:51,916 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 456/500, 0.9 task/s, elapsed: 497s, ETA:    48s2025-08-19 16:34:52,908 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:52,939 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 457/500, 0.9 task/s, elapsed: 498s, ETA:    47s2025-08-19 16:34:53,928 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:53,959 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 458/500, 0.9 task/s, elapsed: 499s, ETA:    46s2025-08-19 16:34:54,968 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:55,001 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:34:56,017 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 459/500, 0.9 task/s, elapsed: 500s, ETA:    45s2025-08-19 16:34:56,054 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-2025-08-19 16:34:57,045 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:57,075 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 460/500, 0.9 task/s, elapsed: 501s, ETA:    44s2025-08-19 16:34:58,087 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:58,118 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 461/500, 0.9 task/s, elapsed: 502s, ETA:    43s2025-08-19 16:34:59,092 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:34:59,123 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 462/500, 0.9 task/s, elapsed: 504s, ETA:    41s2025-08-19 16:35:00,127 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:00,163 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 463/500, 0.9 task/s, elapsed: 505s, ETA:    40s2025-08-19 16:35:01,177 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:01,209 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 464/500, 0.9 task/s, elapsed: 506s, ETA:    39s2025-08-19 16:35:02,193 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:02,224 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 465/500, 0.9 task/s, elapsed: 507s, ETA:    38s2025-08-19 16:35:03,236 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:03,271 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 466/500, 0.9 task/s, elapsed: 508s, ETA:    37s2025-08-19 16:35:04,255 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:04,289 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 467/500, 0.9 task/s, elapsed: 510s, ETA:    36s2025-08-19 16:35:05,366 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:05,397 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 468/500, 0.9 task/s, elapsed: 511s, ETA:    35s2025-08-19 16:35:06,573 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:06,605 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 469/500, 0.9 task/s, elapsed: 512s, ETA:    34s2025-08-19 16:35:07,758 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:07,790 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 470/500, 0.9 task/s, elapsed: 513s, ETA:    33s2025-08-19 16:35:08,940 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:08,972 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 471/500, 0.9 task/s, elapsed: 514s, ETA:    32s2025-08-19 16:35:10,114 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:10,148 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 472/500, 0.9 task/s, elapsed: 515s, ETA:    31s2025-08-19 16:35:11,151 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:11,188 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 473/500, 0.9 task/s, elapsed: 516s, ETA:    29s2025-08-19 16:35:12,155 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:12,192 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 474/500, 0.9 task/s, elapsed: 517s, ETA:    28s2025-08-19 16:35:13,135 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:13,168 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 475/500, 0.9 task/s, elapsed: 518s, ETA:    27s2025-08-19 16:35:14,119 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:14,151 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 476/500, 0.9 task/s, elapsed: 519s, ETA:    26s2025-08-19 16:35:14,981 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:15,013 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 477/500, 0.9 task/s, elapsed: 520s, ETA:    25s2025-08-19 16:35:15,896 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:15,932 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 478/500, 0.9 task/s, elapsed: 521s, ETA:    24s2025-08-19 16:35:16,786 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:16,817 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 479/500, 0.9 task/s, elapsed: 521s, ETA:    23s2025-08-19 16:35:17,640 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:17,671 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 480/500, 0.9 task/s, elapsed: 522s, ETA:    22s2025-08-19 16:35:18,506 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:18,537 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 481/500, 0.9 task/s, elapsed: 523s, ETA:    21s2025-08-19 16:35:19,402 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:19,446 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 482/500, 0.9 task/s, elapsed: 524s, ETA:    20s[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 483/500, 0.9 task/s, elapsed: 525s, ETA:    18s2025-08-19 16:35:20,298 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:20,333 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 484/500, 0.9 task/s, elapsed: 525s, ETA:    17s2025-08-19 16:35:21,217 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:21,254 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 485/500, 0.9 task/s, elapsed: 526s, ETA:    16s2025-08-19 16:35:22,188 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:22,224 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 486/500, 0.9 task/s, elapsed: 527s, ETA:    15s2025-08-19 16:35:23,146 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:23,180 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 487/500, 0.9 task/s, elapsed: 528s, ETA:    14s2025-08-19 16:35:24,057 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:24,088 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 488/500, 0.9 task/s, elapsed: 529s, ETA:    13s2025-08-19 16:35:24,989 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:25,029 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 489/500, 0.9 task/s, elapsed: 530s, ETA:    12s2025-08-19 16:35:25,937 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:25,968 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 490/500, 0.9 task/s, elapsed: 531s, ETA:    11s2025-08-19 16:35:26,861 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:26,900 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 491/500, 0.9 task/s, elapsed: 532s, ETA:    10s2025-08-19 16:35:27,810 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:27,850 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 492/500, 0.9 task/s, elapsed: 533s, ETA:     9s2025-08-19 16:35:28,706 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:28,739 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 493/500, 0.9 task/s, elapsed: 534s, ETA:     8s2025-08-19 16:35:29,635 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:29,673 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 494/500, 0.9 task/s, elapsed: 535s, ETA:     6s2025-08-19 16:35:30,573 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:30,609 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 495/500, 0.9 task/s, elapsed: 536s, ETA:     5s2025-08-19 16:35:31,517 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:31,553 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 496/500, 0.9 task/s, elapsed: 537s, ETA:     4s2025-08-19 16:35:32,430 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:32,463 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 497/500, 0.9 task/s, elapsed: 537s, ETA:     3s2025-08-19 16:35:33,336 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:33,378 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 498/500, 0.9 task/s, elapsed: 538s, ETA:     2s2025-08-19 16:35:34,274 - shapely.geos - INFO - Self-intersection at or near point 134.36374450633136 1091.2903070826083
-2025-08-19 16:35:34,307 - shapely.geos - INFO - Self-intersection at or near point 165.02390945024581 1095.7013529720464
-[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 499/500, 0.9 task/s, elapsed: 539s, ETA:     1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 500/500, 0.9 task/s, elapsed: 540s, ETA:     0sTraceback (most recent call last):
-  File "/home/bryan/Desktop/Allen/UniAD/test_1000_samples.py", line 78, in <module>
-    main()
-  File "/home/bryan/Desktop/Allen/UniAD/test_1000_samples.py", line 67, in main
-    results = custom_multi_gpu_test(model, data_loader, tmpdir=None, gpu_collect=False)
-  File "/home/bryan/Desktop/Allen/UniAD/projects/mmdet3d_plugin/uniad/apis/test.py", line 155, in custom_multi_gpu_test
-    bbox_results = collect_results_cpu(bbox_results, len(dataset), tmpdir)
-  File "/home/bryan/Desktop/Allen/UniAD/projects/mmdet3d_plugin/uniad/apis/test.py", line 207, in collect_results_cpu
-    dist.broadcast(dir_tensor, 0)
-  File "/home/bryan/anaconda3/envs/uniad2/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 1451, in wrapper
-    return func(*args, **kwargs)
-  File "/home/bryan/anaconda3/envs/uniad2/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 1565, in broadcast
-    default_pg = _get_default_group()
-  File "/home/bryan/anaconda3/envs/uniad2/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 707, in _get_default_group
-    raise RuntimeError(
-RuntimeError: Default process group has not been initialized, please make sure to call init_process_group.
