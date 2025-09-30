@@ -13,7 +13,6 @@ ckpts/
 Created/
 data
 projects_original/
-semantic-map/
 viz/
 .Python
 build/
@@ -160,3 +159,10 @@ core.*
 /data/itri/hct_train/**
 !/data/itri/hct_train/**/*.py
 !/data/itri/hct_train/*.py
+
+
+# Allow tracking only Python files in /semantic-map (keep other files ignored)
+!/semantic-map/
+/semantic-map/**
+!/semantic-map/**/*.py
+!/semantic-map/*.py
