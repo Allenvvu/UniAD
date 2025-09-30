@@ -114,36 +114,3 @@ data/
     └── motion_anchor_infos_mode6.pkl   # Motion prediction anchor information
 ```
 
-### Data Storage Logic
-
-1. **L2G Scene Data** (`data/l2g/`)
-   - Individual scene files converted from L2G format
-   - Each file contains temporal sequences for one driving scene
-   - Naming: `{timestamp}_{scene_id}_l2g_converted_infos.pkl`
-   - Backup copies preserved for safety
-
-2. **Combined Annotations** (`data/infos/`)
-   - `nuscenes_infos_temporal_val.pkl`: Merged data from all L2G scenes
-   - Used directly by UniAD inference pipeline
-   - Contains temporal sequences with queue_length=3
-
-3. **Image Storage** (`data/nuscenes/image/`)
-   - Organized by camera sensor name
-   - Images named by nanosecond timestamps
-   - Format: `{timestamp_ns}.jpg`
-   - Supports 4 cameras (front, back, front-left, front-right)
-
-4. **NuScenes Metadata** (`data/nuscenes/v1.0-trainval/`)
-   - Standard nuScenes JSON tables
-   - Links samples, sensors, poses, and annotations
-   - Required for dataset compatibility
-
-5. **Map Data** (`data/nuscenes/maps/`)
-   - **basemap/**: Static PNG images for visualization
-   - **expansion/**: Vector map layers (lanes, dividers, crossings)
-   - **semantic_map/**: Original ITRI HCT format
-   - **itri_map/**: Converted expansion maps for ITRI scenes
-
-6. **Motion Anchors** (`data/others/`)
-   - Pre-computed motion prediction anchors
-   - Used by motion head for trajectory prediction
