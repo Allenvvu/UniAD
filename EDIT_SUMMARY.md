@@ -57,8 +57,8 @@ PYTHONPATH=. torchrun --nproc_per_node=1 --master_port=29500 \
   - **Lines 713-720**: Added list-based data structure handling in `occ_get_detection_ann_info`
   - **Lines 746-756**: Added velocity handling for L2G format in occupancy detection
 
-### 2. **`projects/mmdet3d_plugin/uniad/dense_heads/panseg_head.py`**
-   - Contains modifications for handling cases
+- `projects/mmdet3d_plugin/uniad/dense_heads/panseg_head.py`
+  - Contains modifications for handling cases
 
 
 ---
