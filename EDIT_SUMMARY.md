@@ -1,5 +1,14 @@
 # UniAD Project Modifications Summary
 
+## Train running command
+```
+python projects/tools/train_itri_motion_occ_planning.py \
+     projects/configs/itri_motion_occ_planning_training.py \
+     --work-dir ./work_dirs/itri_motion_occ_planning \
+     --gpus 1
+```
+
+
 ## Major Areas of Development
 
 Summary: Edit the modules to train UniAD with ITRI tracking and map dataset. Using 'projects/mmdet3d_plugin/uniad/dense_heads/virtual_bev_module.py' to create virtual BEV from sdc_embeddings, track_queries, and map_queries.
