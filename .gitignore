@@ -10,10 +10,12 @@ __pycache__/
 .dist_test/
 *.avi
 ckpts/
+canbus/
 data
 data_carla
 viz/
 visualization/
+validation_output/
 .Python
 build/
 develop-eggs/
