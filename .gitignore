@@ -151,8 +151,12 @@ debug/
 
 core.*
  
-# Allow tracking only Python files in data/itri/hct_train (keep rest of data ignored)
-!data/itri/
-!data/itri/hct_train/
-!data/itri/hct_train/*.py
-!data/itri/hct_train/**/*.py
+# Allow tracking only Python files in /data/itri/hct_train (keep rest of data ignored)
+!/data/
+/data/**
+!/data/itri/
+/data/itri/**
+!/data/itri/hct_train/
+/data/itri/hct_train/**
+!/data/itri/hct_train/**/*.py
+!/data/itri/hct_train/*.py

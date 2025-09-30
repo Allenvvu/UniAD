@@ -64,23 +64,8 @@ Summary: Edit the modules to train UniAD with ITRI tracking and map dataset. Usi
 - `projects/tools/evaluate_itri_model.py` (394 lines)
     - Model performance evaluation on ITRI validation set
     - Computes metrics for tracking, motion, occupancy, planning
-    - Generates evaluation reports and visualizations
-- `projects/tools/monitor_training.py` (343 lines)
-    - Real-time training monitoring and logging
-    - Loss tracking across all subtasks
-    - Tensorboard integration and metric visualization
-    - Early stopping and checkpoint management
-- `projects/tools/test_virtual_bev.py` (190 lines)
-    - Virtual BEV module testing and validation
-    - Verifies BEV feature dimensions and spatial encoding
-    - Debugging tool for ITRI integration
 
 **Configuration Files:**
-- `projects/configs/itri_inference.py` (132 lines)
-    - Inference configuration for ITRI-trained models
-    - Model architecture and weight loading settings
-    - Input preprocessing and output postprocessing
-    - Batch size, device, and runtime configurations
 - `projects/configs/itri_motion_occ_planning_training.py` (300 lines)
     - Lines 1-32    Base config import and class definitions
     - Lines 33-45   Data paths and input modality (use_camera=False, use_external=True)
