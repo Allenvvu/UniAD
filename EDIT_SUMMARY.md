@@ -72,7 +72,7 @@ Summary: Edit the modules to train UniAD with ITRI tracking and map dataset. Usi
 
 
 ### 4. Semantic-Map Folder
-### Most files are written in previously approach with BEV generation from ITRI 4 camera setup
+**Most files were developed for the earlier ITRI 4-camera BEV-generation pipeline**
 - `bevformer_integration_6cam.py`
     - BEVFormer integration for ITRI 6-camera setup (4 real + 2 dummy cameras)
     - hardware calibration with 1440x928 resolution
@@ -117,4 +117,74 @@ Summary: Edit the modules to train UniAD with ITRI tracking and map dataset. Usi
     - Used by: `data/itri/hct_train/itri_bevformer_extractor.py`
 
 
-### 
+### 5. Data Extraction Pipeline (data/itri/hct_train/)
+**Most files were developed for the earlier ITRI 4-camera BEV-generation pipeline. We planned to use trained bevformer module from UniAD**
+
+- `timestamp_extract.py`
+    - Purpose: Extract and generate master timestamps from ROS bag files
+        - `extract_bag_duration()` - Get start/end times from bag
+        - `load_master_timestamps()` - Load continuous timestamps
+        - `find_closest_timestamp()` - Temporal alignment with tolerance
+    - Output: `timestamps/continuous_timestamps.pkl` (master time reference)
+    - Used by: ALL other extraction scripts (canbus, track_query, gt_sdc, gt_fut_traj)
+
+- `canbus_extraction.py`
+    - Purpose: Extract 18-D CAN bus vectors from ROS bags
+        - Reads `/car_state` (position, quaternion)
+        - Reads `/imu/data` (linear accel, angular velocity)
+        - Reads `/filter/velocity` (velocity)
+    - Output: `canbus/{bag_name}_can_bus.pkl` (5,627 frames for 0.bag)
+    - Imports: `timestamp_extract`, `tf.transformations`
+
+- `track_query_extract.py`
+    - Purpose: Convert ROS detected objects to MotionFormer track queries
+    - Uses ITRITrackQueryBuilder from `track/track_query_builder.py`
+    - Integrates SDC embedding from sdc_embedding_extract
+    - Output: `track_query/*.pt` (549/562 frames successful, 13 failed)
+    - Imports: `track_query_builder`, `timestamp_extract`, `sdc_embedding_extract`
+
+- `sdc_embedding_extract.py`
+    - Purpose: Create SDC (ego vehicle) embeddings from CAN bus data
+    - `create_sdc_embedding_from_canbus()` - Generate SDC query embedding
+    - `create_sdc_track_bbox_results()` - Create ego bbox results
+    - Integrates with track_query generation
+    - Used by: `track_query_extract.py`
+
+- `gt_sdc_extraction.py`
+    - Purpose: Generate ground truth SDC trajectories for planning
+    - Output: `gt_sdc/*.pt` (5,616 frames - ground truth ego trajectories)
+    - Imports: `timestamp_extract`, `canbus_extraction`
+    - Data: Future 6 seconds at 2Hz sampling
+
+- `gt_fut_traj_extract.py`
+    - Purpose: Extract ground truth future trajectories for all tracked objects
+    - Output format: (num_objects, predict_steps, 2) with masks
+    - Output: `gt_fut_traj/*.pt` (per-frame future trajectory data)
+
+- `gt_lane_extraction.py`
+    - Purpose: Convert semantic map polylines to lane ground truth
+        - gt_lane_labels - Lane class labels
+        - gt_lane_bboxes - Bounding boxes [x_min, y_min, x_max, y_max]
+        - gt_lane_masks - Binary segmentation masks [H, W]
+    - Imports: `coordinate_transform`, `geometric_utils` from semantic-map
+    - Output: `gt_lane/*.pt`
+
+- `itri_bevformer_extractor.py`  **PRIMARY BEV FEATURE GENERATOR**
+    - Purpose: Extract BEV features using pre-trained BEVFormer model
+    - Uses `bevformer_integration_6cam.py` from semantic-map
+    - Model: Loads UniAD checkpoint (`ckpts/uniad_base_track_map.pth`)
+    - Output: `bev_features/*.pt` (123 frames at ~2Hz)
+    - Imports: `timestamp_extract`, `bevformer_integration_6cam`, mmdet3d model builders
+
+
+**Data Pipeline Flow:**
+1. **ROS Bags** → `hct_train_bag_to_jpg.py` → **Images**
+2. **ROS Bags** → `timestamp_extract.py` → **Master Timestamps**
+3. **ROS Bags** + **Timestamps** → `canbus_extraction.py` → **CAN Bus Data**
+4. **Images** + **CAN Bus** → `itri_bevformer_extractor.py` → **BEV Features**
+5. **ROS Bags** + **Timestamps** → `track_query_extract.py` → **Track Queries**
+6. **CAN Bus** + **Timestamps** → `gt_sdc_extraction.py` → **GT SDC Trajectories**
+7. **ROS Bags** + **Timestamps** → `gt_fut_traj_extract.py` → **GT Future Trajectories**
+8. **Semantic Map** + **Timestamps** → `gt_lane_extraction.py` → **GT Lane Annotations**
+
+###
